@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dimRadius">8dp</dimen>
+    <dimen name="dimRadiusFAB">64dp</dimen>
+    <dimen name="dimMargin">8dp</dimen>
+    <dimen name="dimMarginBig">16dp</dimen>
+    <dimen name="dimStroke">2dp</dimen>
+    <dimen name="dimText">24sp</dimen>
+    <dimen name="dimTextLittle">18sp</dimen>
+</resources>

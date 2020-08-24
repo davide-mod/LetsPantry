@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimMargin"
+    android:background="@drawable/rettangolo_back"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="@dimen/dimText"
+        android:textColor="@color/colorText1"
+        android:id="@+id/IngredienteNome"
+        android:layout_marginStart="@dimen/dimMargin"
+        android:layout_marginTop="@dimen/dimMarginBig"
+        android:layout_marginBottom="@dimen/dimMarginBig"
+        android:text="Mezzepenne Rigate Barilla"
+        />
+
+    <View
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="88dp"
+        android:layout_height="@dimen/dimStroke"
+        android:background="@color/colorPrimary"
+        android:id="@+id/lineData"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lineData"
+        android:layout_marginTop="@dimen/dimMargin"
+        android:layout_marginEnd="@dimen/dimMargin"
+        android:textSize="@dimen/dimTextLittle"
+        android:textColor="@color/colorText1"
+        android:id="@+id/IngredienteScadenza"
+        android:text="14 Giu"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineData"
+        android:layout_marginBottom="@dimen/dimMargin"
+        android:layout_marginEnd="@dimen/dimMargin"
+        android:textSize="@dimen/dimTextLittle"
+        android:textColor="@color/colorText1"
+        android:id="@+id/IngredienteQuantita"
+        android:text="2000g"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

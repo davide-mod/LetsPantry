@@ -3,18 +3,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/colorBackgroundGrey"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main.MainFragment">
 
+
     <TextView
-        android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MainFragment"
+        android:textSize="@dimen/dimTextLittle"
+        android:text="calendario"
+        android:layout_margin="@dimen/dimMargin"
+        android:textColor="@color/colorText1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/txtCalendario"
+        />
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        app:layout_constraintTop_toBottomOf="@id/txtCalendario"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarBackgroundColor="@color/colorPrimary"
+        app:compactCalendarTextColor="@color/colorText2"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorAccent"
+        app:compactCalendarCurrentDayBackgroundColor="@color/colorText1"
+        app:compactCalendarMultiEventIndicatorColor="@color/colorText2"
+        />
+    <include
+        layout="@layout/item_ingrediente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimMargin"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:background="@drawable/fab_back"
+        android:text="Aggiungi"
+        android:textSize="@dimen/dimText"
+        android:layout_margin="@dimen/dimMargin"
+        android:padding="@dimen/dimMargin"
+        android:textColor="@color/colorText2"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
