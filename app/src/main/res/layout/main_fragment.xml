@@ -21,23 +21,14 @@
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/txtCalendario"
         />
-    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+    <sun.bob.mcalendarview.views.ExpCalendarView
         app:layout_constraintTop_toBottomOf="@id/txtCalendario"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:id="@+id/compactcalendar_view"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        app:compactCalendarTargetHeight="250dp"
-        app:compactCalendarTextSize="12sp"
-        app:compactCalendarBackgroundColor="@color/colorPrimary"
-        app:compactCalendarTextColor="@color/colorText2"
-        app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorAccent"
-        app:compactCalendarCurrentDayBackgroundColor="@color/colorText1"
-        app:compactCalendarMultiEventIndicatorColor="@color/colorText2"
-        />
+        android:id="@+id/calendar_exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity" />
     <include
         layout="@layout/item_ingrediente"
         android:layout_width="match_parent"
