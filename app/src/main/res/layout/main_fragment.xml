@@ -17,9 +17,18 @@
         android:layout_margin="@dimen/dimMargin"
         android:textColor="@color/colorText1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/txtCalendario"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtCalendario"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/dimTextLittle"
+        android:layout_marginRight="@dimen/dimMargin"
+        android:id="@+id/ricerca"
         />
     <sun.bob.mcalendarview.views.ExpCalendarView
         app:layout_constraintTop_toBottomOf="@id/txtCalendario"
@@ -52,7 +61,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:gravity="center"
         android:background="@drawable/fab_back"
-        android:text="Aggiungi"
+        android:text="@string/add"
         android:textSize="@dimen/dimText"
         android:layout_margin="@dimen/dimMargin"
         android:padding="@dimen/dimMargin"

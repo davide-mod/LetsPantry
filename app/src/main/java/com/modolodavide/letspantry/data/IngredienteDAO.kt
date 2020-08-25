@@ -8,7 +8,7 @@ import androidx.room.Query
 @Dao
 interface IngredienteDAO {
 
-    @Query("SELECT * FROM dispensa")
+    @Query("SELECT * FROM dispensa ORDER BY nome")
     suspend fun getAll(): List<Ingrediente>
 
     @Insert

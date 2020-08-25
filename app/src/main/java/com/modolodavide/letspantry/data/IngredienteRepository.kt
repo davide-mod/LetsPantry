@@ -13,7 +13,7 @@ class IngredienteRepository(app: Application) {
 
     init {
         CoroutineScope(Dispatchers.IO).launch {
-            ingredienteDAO.deleteAll()
+            //ingredienteDAO.deleteAll()
             var data: List<Ingrediente>? = ingredienteDAO.getAll()
             if (data.isNullOrEmpty()) {
                 for(i in 1..3)

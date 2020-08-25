@@ -13,7 +13,7 @@
         android:background="@drawable/fab_back_red"
         android:padding="@dimen/dimMargin"
         android:text="elimina"
-        android:textColor="@color/colorText1"
+        android:textColor="@color/colorText2"
         android:textSize="@dimen/dimText"
         app:layout_constraintBottom_toTopOf="@id/editNome"
         app:layout_constraintRight_toLeftOf="@id/btnAggiungiElemento"
