@@ -8,8 +8,7 @@ import kotlinx.coroutines.launch
 
 class IngredienteRepository(app: Application) {
     var ingredienteData = MutableLiveData<List<Ingrediente>>()
-    private val ingredienteDAO = IngredienteDatabase.getDatabase(app)
-        .ingredienteDAO()
+    private val ingredienteDAO = IngredienteDatabase.getDatabase(app).ingredienteDAO()
 
     init {
         CoroutineScope(Dispatchers.IO).launch {
@@ -49,12 +48,6 @@ class IngredienteRepository(app: Application) {
     private fun randomIngrediente(): Ingrediente{
         return (Ingrediente(0, "Ingrediente"+(1..30).random(), 2020, (8..9).random(), (1..30).random(), (1..1000).random().toDouble()))
 
-    }
-
-    fun refresh(){
-        CoroutineScope(Dispatchers.IO).launch {
-            ingredienteData.postValue(ingredienteDAO.getAll())
-        }
     }
 
 }

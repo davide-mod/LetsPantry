@@ -18,7 +18,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.data.Ingrediente
-import com.modolodavide.letspantry.data.IngredienteAdapter
+import kotlinx.android.synthetic.main.main_fragment.*
 import sun.bob.mcalendarview.MarkStyle
 import sun.bob.mcalendarview.listeners.OnDateClickListener
 import sun.bob.mcalendarview.listeners.OnMonthChangeListener
@@ -49,7 +49,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         calendario.isVisible = false
         calendario.bringToFront()
         val txtCalendario: TextView = view.findViewById(R.id.txtCalendario)
-        listaIngredienti = view.findViewById<RecyclerView>(R.id.viewIngredienti)
+        listaIngredienti = view.findViewById(R.id.viewIngredienti)
         val btnAdd = view.findViewById<TextView>(R.id.btnAggiungi)
 
         calendario.setOnMonthChangeListener(object : OnMonthChangeListener() {
@@ -164,11 +164,11 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             val listaFiltrata = mutableListOf<Ingrediente>()
             mainVM.ingredienteList.value?.forEach {
                 val sim = similarity(it.nome, ricerca.text.toString())
-                if(sim > maxSF) maxSF = sim
+                if (sim > maxSF) maxSF = sim
             }
             mainVM.ingredienteList.value?.forEach {
                 val sim = similarity(it.nome, ricerca.text.toString())
-                if (sim > maxSF/2) {
+                if (sim > maxSF / 2) {
                     listaFiltrata.add(it)
                     Log.i(
                         "debug",
@@ -182,12 +182,12 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                 }
             }
 
-            if(ricerca.text.toString()!="") {
+            if (ricerca.text.toString() != "") {
                 val adapterI = IngredienteAdapter(requireContext(), listaFiltrata, this)
                 listaIngredienti.adapter = adapterI
-            }
-            else{
-                val adapterI = IngredienteAdapter(requireContext(), mainVM.ingredienteList.value!!, this)
+            } else {
+                val adapterI =
+                    IngredienteAdapter(requireContext(), mainVM.ingredienteList.value!!, this)
                 listaIngredienti.adapter = adapterI
             }
         }
@@ -221,14 +221,23 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
          */
 
         //https://github.com/SpongeBobSun/mCalendarView
+        /*
+
+            TEMPORANEO PER CAMBIARE FRAGMENT
+
+         */
 
         return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        textToList.setOnClickListener{
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.container, ListaSpesaFragment.newInstance())
+                .commit()
+        }
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
     private fun refreshLista(lista: MutableList<Ingrediente>) {
@@ -271,7 +280,11 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(true)
         dialog.setContentView(R.layout.edit_ingrediente)
-        calendario.unMarkDate(ingrediente.scadenzaAnno, ingrediente.scadenzaMese, ingrediente.scadenzaGiorno)
+        calendario.unMarkDate(
+            ingrediente.scadenzaAnno,
+            ingrediente.scadenzaMese,
+            ingrediente.scadenzaGiorno
+        )
         val newData = dialog.findViewById<TextView>(R.id.txtNewData)
         newData.text =
             "${ingrediente.scadenzaGiorno}-${ingrediente.scadenzaMese}-${ingrediente.scadenzaAnno}"
@@ -316,6 +329,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         }
         dialog.show()
     }
+
     //https://stackoverflow.com/questions/955110/similarity-string-comparison-in-java String matching k-approssimato già fatto
     private fun similarity(s1: String, s2: String): Double {
         var longer = s1
@@ -329,6 +343,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             1.0 /* both strings are zero length */
         } else (longerLength - editDistance(longer, shorter)) / longerLength.toDouble()
     }
+
     private fun editDistance(s1: String, s2: String): Int {
         var s1 = s1
         var s2 = s2

@@ -1,4 +1,4 @@
-package com.modolodavide.letspantry.data
+package com.modolodavide.letspantry.ui.main
 
 import android.content.Context
 import android.util.Log
@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.R
+import com.modolodavide.letspantry.data.Ingrediente
 import java.util.*
 
 class IngredienteAdapter(private val context: Context, val listaIngrediente: List<Ingrediente>, val ingredienteListener: IngredienteListener) :
@@ -56,9 +57,6 @@ class IngredienteAdapter(private val context: Context, val listaIngrediente: Lis
 
             holder.itemView.setOnClickListener {
                 ingredienteListener.onIngredienteListener(ingrediente, holder.layoutPosition)
-                /*
-                ONCLICK INGREDIENTE
-                 */
             }
 
         }
