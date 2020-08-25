@@ -28,26 +28,28 @@ import java.time.ZoneId
 import java.util.*
 
 
-class MainFragment : Fragment() {
+class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
 
     companion object {
         fun newInstance() = MainFragment()
     }
 
     private lateinit var viewModel: MainViewModel
+    private lateinit var mainVM: MainViewModel
+    private lateinit var listaIngredienti: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         val view = inflater.inflate(R.layout.main_fragment, container, false)
-        val mainVM = ViewModelProvider(this).get(MainViewModel::class.java)
+        mainVM = ViewModelProvider(this).get(MainViewModel::class.java)
 
         val calendario: ExpCalendarView = view.findViewById(R.id.calendar_exp)
         calendario.isVisible = false
         calendario.bringToFront()
         val txtCalendario: TextView = view.findViewById(R.id.txtCalendario)
-        val listaIngredienti = view.findViewById<RecyclerView>(R.id.viewIngredienti)
+        listaIngredienti = view.findViewById<RecyclerView>(R.id.viewIngredienti)
         val btnAdd = view.findViewById<TextView>(R.id.btnAggiungi)
 
         calendario.setOnMonthChangeListener(object : OnMonthChangeListener() {
@@ -57,7 +59,7 @@ class MainFragment : Fragment() {
             }
         })
         mainVM.ingredienteList.observe(viewLifecycleOwner, {
-            val adapterI = IngredienteAdapter(requireContext(), it)
+            val adapterI = IngredienteAdapter(requireContext(), it, this)
             listaIngredienti.adapter = adapterI
             it.forEach { ingrediente ->
                 calendario.markDate(
@@ -79,9 +81,7 @@ class MainFragment : Fragment() {
                         listaFiltrata.add(it)
                     }
                 }
-                val adapterI = IngredienteAdapter(requireContext(), listaFiltrata)
-                listaIngredienti.adapter = adapterI
-
+                refreshLista(listaFiltrata)
             }
         })
 
@@ -94,7 +94,7 @@ class MainFragment : Fragment() {
             if (calendario.isVisible) {
                 calendario.isVisible = false
                 txtCalendario.text = "calendario"
-                val adapterI = IngredienteAdapter(requireContext(), mainVM.ingredienteList.value!!)
+                val adapterI = IngredienteAdapter(requireContext(), mainVM.ingredienteList.value!!, this)
                 listaIngredienti.adapter = adapterI
             } else {
                 calendario.travelTo(
@@ -162,6 +162,7 @@ class MainFragment : Fragment() {
         - finestra per aggiunta ingredienti 1h[OK]
         - menu laterale per cambiare Fragment 30mins
         - order by &ricerca (stile gmail) 1h
+        - modifica ingrediente
         DESIGN:
         - pulsante per nascondere il calendario 5mins [OK]
         - nome del mese: prendo il mese attuale dal sistema, poi onMonthChangeListener 15mins [OK]
@@ -187,6 +188,10 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
+    }
+    private fun refreshLista(lista: MutableList<Ingrediente>) {
+        val adapterI = IngredienteAdapter(requireContext(), lista, this)
+        listaIngredienti.adapter = adapterI
     }
 
     private fun parseData(data: String): Triple<Int, Int, Int> {
@@ -217,6 +222,55 @@ class MainFragment : Fragment() {
             }
         }
         return Triple(year.toInt(), month.toInt(), day.toInt())
+    }
+
+    override fun onIngredienteListener(ingrediente: Ingrediente, position: Int) {
+        val dialog = Dialog(requireContext())
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(true)
+        dialog.setContentView(R.layout.edit_ingrediente)
+        val newData = dialog.findViewById<TextView>(R.id.txtNewData)
+        newData.text = "${ingrediente.scadenzaGiorno}-${ingrediente.scadenzaMese}-${ingrediente.scadenzaAnno}"
+        newData.setOnClickListener {
+            DatePickerDialog(
+                requireContext(),
+                { _, year, month, dayOfMonth ->
+                    newData.text = "$dayOfMonth-${month + 1}-$year"
+                },
+                ingrediente.scadenzaAnno,
+                ingrediente.scadenzaMese-1,
+                ingrediente.scadenzaGiorno
+            ).show()
+        }
+        val newNome = dialog.findViewById<EditText>(R.id.editNome)
+        val newQuantita = dialog.findViewById<EditText>(R.id.editQuantita)
+        val btnAdd2 = dialog.findViewById<TextView>(R.id.btnAggiungiElemento)
+        val elimina = dialog.findViewById<TextView>(R.id.elimina)
+        newNome.setText(ingrediente.nome)
+        newQuantita.setText(ingrediente.quantita.toString())
+        btnAdd2.setOnClickListener {
+            var nome = "Ingrediente senza nome"
+            var quantita = "0"
+            val (scadenzaAnno, scadenzaMese, scadenzaGiorno) = parseData(newData.text.toString())
+            if (newNome.text.toString() != "") nome = newNome.text.toString()
+            if (newQuantita.text.toString() != "") quantita = newQuantita.text.toString()
+            mainVM.updateIngrediente(
+                Ingrediente(
+                    ingrediente.id,
+                    nome,
+                    scadenzaAnno,
+                    scadenzaMese,
+                    scadenzaGiorno,
+                    quantita.toDouble()
+                )
+            )
+            dialog.dismiss()
+        }
+        elimina.setOnClickListener {
+            mainVM.deleteIngrediente(ingrediente)
+            dialog.dismiss()
+        }
+        dialog.show()
     }
 
 }

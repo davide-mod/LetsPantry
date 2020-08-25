@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.R
 import java.util.*
 
-class IngredienteAdapter(private val context: Context, val listaIngrediente: List<Ingrediente>) :
+class IngredienteAdapter(private val context: Context, val listaIngrediente: List<Ingrediente>, val ingredienteListener: IngredienteListener) :
     RecyclerView.Adapter<IngredienteAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val nome: TextView = itemView.findViewById(R.id.IngredienteNome)
@@ -54,7 +54,18 @@ class IngredienteAdapter(private val context: Context, val listaIngrediente: Lis
                 scadenza.setTextColor(ContextCompat.getColor(context, R.color.colorText1))
             }
 
+            holder.itemView.setOnClickListener {
+                ingredienteListener.onIngredienteListener(ingrediente, holder.layoutPosition)
+                /*
+                ONCLICK INGREDIENTE
+                 */
+            }
+
         }
+    }
+
+    interface IngredienteListener{
+        fun onIngredienteListener(ingrediente: Ingrediente, position: Int)
     }
 
     private fun getMeseITA(mese: Int): String {

@@ -13,7 +13,7 @@ class IngredienteRepository(app: Application) {
 
     init {
         CoroutineScope(Dispatchers.IO).launch {
-            //ingredienteDAO.deleteAll()
+            ingredienteDAO.deleteAll()
             var data: List<Ingrediente>? = ingredienteDAO.getAll()
             if (data.isNullOrEmpty()) {
                 for(i in 1..3)
@@ -36,12 +36,14 @@ class IngredienteRepository(app: Application) {
     fun deleteIngrediente(ingrediente: Ingrediente) {
         CoroutineScope(Dispatchers.IO).launch {
             ingredienteDAO.deleteIngrediente(ingrediente)
+            ingredienteData.postValue(ingredienteDAO.getAll())
         }
     }
 
     fun updateIngrediente(nome: String, scadenzaAnno: Int, scadenzaMese: Int, scadenzaGiorno: Int, quantita: Double, id: Int){
         CoroutineScope(Dispatchers.IO).launch {
             ingredienteDAO.updateIngrediente(nome, scadenzaAnno, scadenzaMese, scadenzaGiorno, quantita, id)
+            ingredienteData.postValue(ingredienteDAO.getAll())
         }
     }
     private fun randomIngrediente(): Ingrediente{

@@ -20,4 +20,10 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     fun insertIngrediente(ingrediente: Ingrediente) {
         db.insertIngrediente(ingrediente)
     }
+    fun deleteIngrediente(ingrediente: Ingrediente) {
+        db.deleteIngrediente(ingrediente)
+    }
+    fun updateIngrediente(ingrediente: Ingrediente) {
+        db.updateIngrediente(ingrediente.nome, ingrediente.scadenzaAnno, ingrediente.scadenzaMese, ingrediente.scadenzaGiorno, ingrediente.quantita, ingrediente.id)
+    }
 }
