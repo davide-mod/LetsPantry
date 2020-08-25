@@ -12,4 +12,21 @@ class ElementoViewModel(app: Application) : AndroidViewModel(app){
     init{
         elementoList=db.elementoData
     }
+
+    fun insertElemento(elemento: Elemento)
+    {
+        db.insertElemento(elemento)
+    }
+    fun updateElemento(elemento: Elemento)
+    {
+        db.updateElemento(elemento.id, elemento.testo, elemento.preso, elemento.quantita)
+    }
+    fun prendiElemento(elemento: Elemento)
+    {
+        db.updateElemento(elemento.id, elemento.testo, !elemento.preso, elemento.quantita)
+    }
+    fun deleteElemento(elemento: Elemento)
+    {
+        db.deleteElemento(elemento)
+    }
 }

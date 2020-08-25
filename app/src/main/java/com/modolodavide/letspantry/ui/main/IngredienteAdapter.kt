@@ -42,10 +42,6 @@ class IngredienteAdapter(private val context: Context, val listaIngrediente: Lis
             val scadenzatext =
                 ingrediente.scadenzaGiorno.toString() + " " + getMeseITA(ingrediente.scadenzaMese)
             scadenza.text = scadenzatext
-            Log.i(
-                "debug",
-                "OGGI: $day/$month/$year INGREDIENTE: " + ingrediente.scadenzaGiorno.toString() + "/" + ingrediente.scadenzaMese.toString() + "/" + ingrediente.scadenzaAnno.toString()
-            )
             if (ingrediente.scadenzaAnno < year || (ingrediente.scadenzaAnno >= year && ingrediente.scadenzaMese < month) || (ingrediente.scadenzaAnno >= year && ingrediente.scadenzaMese == month && ingrediente.scadenzaGiorno < day)) {
                 linea.setBackgroundColor(ContextCompat.getColor(context, R.color.colorReddo))
                 scadenza.setTextColor(ContextCompat.getColor(context, R.color.colorReddo))

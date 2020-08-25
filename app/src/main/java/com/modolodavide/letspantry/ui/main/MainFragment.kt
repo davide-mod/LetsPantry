@@ -195,23 +195,23 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         /*
         TODO
         FUNZIONALITA'
-        - Creare db ingredienti 30mins [OK]
-        - Leggo il db per caricare la lista di ingredienti in casa 30mins [OK]
-        - ciclo la lista per segnare nel calendario le date di scadenza [OK]
-        - data.clickListener appare finestra con gli ingredienti che scadono in quel giorno 30mins[OK]
-            -> query con ricerca per giorno[OK]
-        - finestra per aggiunta ingredienti 1h[OK]
+            - Creare db ingredienti 30mins [OK]
+            - Leggo il db per caricare la lista di ingredienti in casa 30mins [OK]
+            - ciclo la lista per segnare nel calendario le date di scadenza [OK]
+            - data.clickListener appare finestra con gli ingredienti che scadono in quel giorno 30mins[OK]
+                -> query con ricerca per giorno[OK]
+            - finestra per aggiunta ingredienti 1h[OK]
         - menu laterale per cambiare Fragment 30mins
-        - order by &ricerca (stile gmail) 1h
-        - modifica ingrediente [OK]
+            - order by &ricerca (stile gmail) 1h [OK]
+            - modifica ingrediente [OK]
         DESIGN:
-        - pulsante per nascondere il calendario 5mins [OK]
-        - nome del mese: prendo il mese attuale dal sistema, poi onMonthChangeListener 15mins [OK]
+            - pulsante per nascondere il calendario 5mins [OK]
+            - nome del mese: prendo il mese attuale dal sistema, poi onMonthChangeListener 15mins [OK]
 
         PARTE 2(h):
-        - db lista della spesa
+            - db lista della spesa [OK]
         - aggiunta sequenziale
-        - longpress: menu: elimina, manda a db ingredenti, rimetti in lista
+        - press: menu: elimina, manda a db ingredenti, rimetti in lista
 
         PARTE 3:
         - db ricette 30min
@@ -221,11 +221,6 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
          */
 
         //https://github.com/SpongeBobSun/mCalendarView
-        /*
-
-            TEMPORANEO PER CAMBIARE FRAGMENT
-
-         */
 
         return view
     }
@@ -347,8 +342,8 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
     private fun editDistance(s1: String, s2: String): Int {
         var s1 = s1
         var s2 = s2
-        s1 = s1.toLowerCase()
-        s2 = s2.toLowerCase()
+        s1 = s1.toLowerCase(Locale.ROOT)
+        s2 = s2.toLowerCase(Locale.ROOT)
         val costs = IntArray(s2.length + 1)
         for (i in 0..s1.length) {
             var lastValue = i

@@ -8,7 +8,7 @@ import androidx.room.Query
 @Dao
 interface ElementoDAO {
 
-    @Query("SELECT * FROM listaspesa")
+    @Query("SELECT * FROM listaspesa ORDER BY testo")
     suspend fun getAll(): List<Elemento>
 
     @Insert

@@ -38,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/dimMargin"
         android:textSize="@dimen/dimTextLittle"
+        android:hint="cerca"
         app:layout_constraintLeft_toRightOf="@id/textToList"
         app:layout_constraintRight_toLeftOf="@id/txtCalendario"
         app:layout_constraintTop_toTopOf="parent" />
