@@ -25,19 +25,25 @@
         app:layout_constraintTop_toBottomOf="@id/txtCalendario"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/dimMargin"
         android:id="@+id/calendar_exp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".MainActivity" />
-    <include
-        layout="@layout/item_ingrediente"
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_margin="@dimen/dimMargin"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/calendar_exp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingBottom="64dp"
+        android:clipToPadding="false"
+        android:id="@+id/viewIngredienti"
+        />
 
     <TextView
         android:layout_width="150dp"
@@ -51,6 +57,7 @@
         android:layout_margin="@dimen/dimMargin"
         android:padding="@dimen/dimMargin"
         android:textColor="@color/colorText2"
+        android:id="@+id/btnAggiungi"
         />
 
 
