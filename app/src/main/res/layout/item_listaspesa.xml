@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/rettangolo_back_green"
     android:layout_margin="@dimen/dimMargin"
+    android:id="@+id/elementoView"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
         android:layout_width="wrap_content"
@@ -12,23 +13,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="@dimen/dimMargin"
+        android:padding="@dimen/dimMarginBig"
         android:text="X"
         android:id="@+id/listCheck"
         />
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@id/listQuantita"
+        app:layout_constraintRight_toLeftOf="@id/listQuantita"
         app:layout_constraintLeft_toRightOf="@id/listCheck"
         android:layout_margin="@dimen/dimMargin"
-        android:inputType="text"
         android:textSize="@dimen/dimText"
         android:hint="INGREDIENTE"
         android:id="@+id/listItem"
         />
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,9 +37,8 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_margin="@dimen/dimMargin"
         android:textSize="@dimen/dimText"
-        android:inputType="text"
         android:id="@+id/listQuantita"
-        android:hint="20kg"
+        android:hint="20.0"
         />
 
 

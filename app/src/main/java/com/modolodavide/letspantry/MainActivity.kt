@@ -2,6 +2,7 @@ package com.modolodavide.letspantry
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.modolodavide.letspantry.ui.main.ListaSpesaFragment
 import com.modolodavide.letspantry.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {

@@ -3,71 +3,82 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/colorBackgroundGrey"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGrey"
     tools:context=".ui.main.MainFragment">
 
 
     <TextView
+        android:id="@+id/txtCalendario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/dimTextLittle"
-        android:text="calendario"
         android:layout_margin="@dimen/dimMargin"
+        android:text="calendario"
         android:textColor="@color/colorText1"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/dimTextLittle"
         app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/txtCalendario"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimMargin"
+        android:text="Lista"
+        android:textColor="@color/colorReddo"
+        android:textSize="@dimen/dimTextLittle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ricerca"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
+        android:id="@+id/ricerca"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/txtCalendario"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="@dimen/dimTextLittle"
         android:layout_marginRight="@dimen/dimMargin"
-        android:id="@+id/ricerca"
-        />
+        android:textSize="@dimen/dimTextLittle"
+        android:hint="cerca"
+        app:layout_constraintLeft_toRightOf="@id/textToList"
+        app:layout_constraintRight_toLeftOf="@id/txtCalendario"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <sun.bob.mcalendarview.views.ExpCalendarView
-        app:layout_constraintTop_toBottomOf="@id/txtCalendario"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="@dimen/dimMargin"
         android:id="@+id/calendar_exp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimMargin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCalendario"
         tools:context=".MainActivity" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewIngredienti"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/dimMargin"
+        android:clipToPadding="false"
+        android:paddingBottom="64dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toBottomOf="@id/calendar_exp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:paddingBottom="64dp"
-        android:clipToPadding="false"
-        android:id="@+id/viewIngredienti"
-        />
+        app:layout_constraintTop_toBottomOf="@id/calendar_exp" />
 
     <TextView
+        android:id="@+id/btnAggiungi"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:gravity="center"
-        android:background="@drawable/fab_back"
-        android:text="@string/add"
-        android:textSize="@dimen/dimText"
         android:layout_margin="@dimen/dimMargin"
+        android:background="@drawable/fab_back"
+        android:gravity="center"
         android:padding="@dimen/dimMargin"
+        android:text="@string/add"
         android:textColor="@color/colorText2"
-        android:id="@+id/btnAggiungi"
-        />
+        android:textSize="@dimen/dimText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

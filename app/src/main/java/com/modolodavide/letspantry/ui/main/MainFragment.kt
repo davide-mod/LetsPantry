@@ -18,7 +18,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.data.Ingrediente
-import com.modolodavide.letspantry.data.IngredienteAdapter
+import kotlinx.android.synthetic.main.main_fragment.*
 import sun.bob.mcalendarview.MarkStyle
 import sun.bob.mcalendarview.listeners.OnDateClickListener
 import sun.bob.mcalendarview.listeners.OnMonthChangeListener
@@ -49,7 +49,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         calendario.isVisible = false
         calendario.bringToFront()
         val txtCalendario: TextView = view.findViewById(R.id.txtCalendario)
-        listaIngredienti = view.findViewById<RecyclerView>(R.id.viewIngredienti)
+        listaIngredienti = view.findViewById(R.id.viewIngredienti)
         val btnAdd = view.findViewById<TextView>(R.id.btnAggiungi)
 
         calendario.setOnMonthChangeListener(object : OnMonthChangeListener() {
@@ -164,11 +164,11 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             val listaFiltrata = mutableListOf<Ingrediente>()
             mainVM.ingredienteList.value?.forEach {
                 val sim = similarity(it.nome, ricerca.text.toString())
-                if(sim > maxSF) maxSF = sim
+                if (sim > maxSF) maxSF = sim
             }
             mainVM.ingredienteList.value?.forEach {
                 val sim = similarity(it.nome, ricerca.text.toString())
-                if (sim > maxSF/2) {
+                if (sim > maxSF / 2) {
                     listaFiltrata.add(it)
                     Log.i(
                         "debug",
@@ -182,12 +182,12 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                 }
             }
 
-            if(ricerca.text.toString()!="") {
+            if (ricerca.text.toString() != "") {
                 val adapterI = IngredienteAdapter(requireContext(), listaFiltrata, this)
                 listaIngredienti.adapter = adapterI
-            }
-            else{
-                val adapterI = IngredienteAdapter(requireContext(), mainVM.ingredienteList.value!!, this)
+            } else {
+                val adapterI =
+                    IngredienteAdapter(requireContext(), mainVM.ingredienteList.value!!, this)
                 listaIngredienti.adapter = adapterI
             }
         }
@@ -195,23 +195,23 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         /*
         TODO
         FUNZIONALITA'
-        - Creare db ingredienti 30mins [OK]
-        - Leggo il db per caricare la lista di ingredienti in casa 30mins [OK]
-        - ciclo la lista per segnare nel calendario le date di scadenza [OK]
-        - data.clickListener appare finestra con gli ingredienti che scadono in quel giorno 30mins[OK]
-            -> query con ricerca per giorno[OK]
-        - finestra per aggiunta ingredienti 1h[OK]
+            - Creare db ingredienti 30mins [OK]
+            - Leggo il db per caricare la lista di ingredienti in casa 30mins [OK]
+            - ciclo la lista per segnare nel calendario le date di scadenza [OK]
+            - data.clickListener appare finestra con gli ingredienti che scadono in quel giorno 30mins[OK]
+                -> query con ricerca per giorno[OK]
+            - finestra per aggiunta ingredienti 1h[OK]
         - menu laterale per cambiare Fragment 30mins
-        - order by &ricerca (stile gmail) 1h
-        - modifica ingrediente [OK]
+            - order by &ricerca (stile gmail) 1h [OK]
+            - modifica ingrediente [OK]
         DESIGN:
-        - pulsante per nascondere il calendario 5mins [OK]
-        - nome del mese: prendo il mese attuale dal sistema, poi onMonthChangeListener 15mins [OK]
+            - pulsante per nascondere il calendario 5mins [OK]
+            - nome del mese: prendo il mese attuale dal sistema, poi onMonthChangeListener 15mins [OK]
 
         PARTE 2(h):
-        - db lista della spesa
+            - db lista della spesa [OK]
         - aggiunta sequenziale
-        - longpress: menu: elimina, manda a db ingredenti, rimetti in lista
+        - press: menu: elimina, manda a db ingredenti, rimetti in lista
 
         PARTE 3:
         - db ricette 30min
@@ -227,8 +227,12 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        textToList.setOnClickListener{
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.container, ListaSpesaFragment.newInstance())
+                .commit()
+        }
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
     private fun refreshLista(lista: MutableList<Ingrediente>) {
@@ -271,7 +275,11 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(true)
         dialog.setContentView(R.layout.edit_ingrediente)
-        calendario.unMarkDate(ingrediente.scadenzaAnno, ingrediente.scadenzaMese, ingrediente.scadenzaGiorno)
+        calendario.unMarkDate(
+            ingrediente.scadenzaAnno,
+            ingrediente.scadenzaMese,
+            ingrediente.scadenzaGiorno
+        )
         val newData = dialog.findViewById<TextView>(R.id.txtNewData)
         newData.text =
             "${ingrediente.scadenzaGiorno}-${ingrediente.scadenzaMese}-${ingrediente.scadenzaAnno}"
@@ -316,6 +324,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         }
         dialog.show()
     }
+
     //https://stackoverflow.com/questions/955110/similarity-string-comparison-in-java String matching k-approssimato già fatto
     private fun similarity(s1: String, s2: String): Double {
         var longer = s1
@@ -329,11 +338,12 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             1.0 /* both strings are zero length */
         } else (longerLength - editDistance(longer, shorter)) / longerLength.toDouble()
     }
+
     private fun editDistance(s1: String, s2: String): Int {
         var s1 = s1
         var s2 = s2
-        s1 = s1.toLowerCase()
-        s2 = s2.toLowerCase()
+        s1 = s1.toLowerCase(Locale.ROOT)
+        s2 = s2.toLowerCase(Locale.ROOT)
         val costs = IntArray(s2.length + 1)
         for (i in 0..s1.length) {
             var lastValue = i
