@@ -16,6 +16,7 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
+import com.modolodavide.letspantry.MainActivity
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.data.Ingrediente
 import kotlinx.android.synthetic.main.main_fragment.*
@@ -67,7 +68,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                         ingrediente.scadenzaAnno,
                         ingrediente.scadenzaMese,
                         ingrediente.scadenzaGiorno
-                    ).setMarkStyle(MarkStyle.DOT, getColor(context!!, R.color.colorPrimary))
+                    ).setMarkStyle(MarkStyle.DOT, getColor(requireContext(), R.color.colorReddo))
                 )
             }
         })
@@ -104,7 +105,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                 calendario.travelTo(
                     DateData(year, month, day).setMarkStyle(
                         MarkStyle.BACKGROUND, getColor(
-                            context!!,
+                            requireContext(),
                             R.color.colorPrimary
                         )
                     )
@@ -128,7 +129,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                         newData.text = "$dayOfMonth-${month + 1}-$year"
                     },
                     year,
-                    month,
+                    month-1,
                     day
                 ).show()
             }
@@ -192,45 +193,13 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             }
         }
 
-        /*
-        TODO
-        FUNZIONALITA'
-            - Creare db ingredienti 30mins [OK]
-            - Leggo il db per caricare la lista di ingredienti in casa 30mins [OK]
-            - ciclo la lista per segnare nel calendario le date di scadenza [OK]
-            - data.clickListener appare finestra con gli ingredienti che scadono in quel giorno 30mins[OK]
-                -> query con ricerca per giorno[OK]
-            - finestra per aggiunta ingredienti 1h[OK]
-        - menu laterale per cambiare Fragment 30mins
-            - order by &ricerca (stile gmail) 1h [OK]
-            - modifica ingrediente [OK]
-        DESIGN:
-            - pulsante per nascondere il calendario 5mins [OK]
-            - nome del mese: prendo il mese attuale dal sistema, poi onMonthChangeListener 15mins [OK]
-
-        PARTE 2(h):
-            - db lista della spesa [OK]
-        - aggiunta sequenziale
-        - press: menu: elimina, manda a db ingredenti, rimetti in lista
-
-        PARTE 3:
-        - db ricette 30min
-        - ricerca per ingredienti disponibili rimossi all'uso 4h
-
-        TOT: 10h
-         */
-
-        //https://github.com/SpongeBobSun/mCalendarView
-
         return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        textToList.setOnClickListener{
-            requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.container, ListaSpesaFragment.newInstance())
-                .commit()
+        btnMenuLaterale.setOnClickListener{
+            (activity as MainActivity?)?.openDrawer()
         }
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
     }
@@ -319,13 +288,17 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             dialog.dismiss()
         }
         elimina.setOnClickListener {
+            calendario.unMarkDate(
+                ingrediente.scadenzaAnno,
+                ingrediente.scadenzaMese,
+                ingrediente.scadenzaGiorno
+            )
             mainVM.deleteIngrediente(ingrediente)
             dialog.dismiss()
         }
         dialog.show()
     }
 
-    //https://stackoverflow.com/questions/955110/similarity-string-comparison-in-java String matching k-approssimato già fatto
     private fun similarity(s1: String, s2: String): Double {
         var longer = s1
         var shorter = s2

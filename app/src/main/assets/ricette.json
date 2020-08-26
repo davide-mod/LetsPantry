@@ -1,0 +1,614 @@
+[
+  {
+    "Nome": "Pasta Di Mandorle",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Mandorle",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "250 G = Mandorle\r\n1000 G = Zucchero Semolato\r\n200 G = Glucosio",
+    "Preparazione": "Far tostare un po' le mandorle nel forno. Pestarle in un mortaio a lungo con 250 g di zucchero aggiunto poco per volta con pochi cucchiaini d'acqua (da aggiungere se le mandorle emettono olio). Passare la polvere di mandorle al setaccio, ripestando i pezzi grossi, fino ad esaurimento delle mandorle e dei 250 g di zucchero. Versare la polvere di mandorle in una casseruola e unire i 150 g di glucosio. In un'altra casseruola versare i rimanenti 750 g di zucchero e glucosio; porre sul fuoco e cuocere lentamente fino a quando il composto non comincera a fare filo. A questo punto aggiungere lo sciroppo nel recipiente con le mandorle continuando a rimestare. Rovesciare il composto su un piano di marmo e lasciar raffreddare. Il composto apparira molto granuloso, si può passare nella macchina per fare la pasta, dopo aver inumidito leggermente i rulli. Altrimenti si può anche spianare più volte con il mattarello per renderlo più liscio possibile."
+  },
+  {
+    "Nome": "Pasta Di Mandorle (2)",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Mandorle",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "100 G = Mandorle Pelate\r\n100 G = Zucchero\r\n30 G = Farina\r\n3 = Albumi D'uovo\r\nBurro",
+    "Preparazione": "Le dosi sono per 30-35 pasticcini. Mescolate le mandorle e lo zucchero, frullateli fino a ottenere una specie di farina a grana grossa. Incorporatevi gli albumi a neve soda e poi la farina setacciata. Imburrate e infarinate la placca del forno. Mettete un po' d'impasto in una sacca da pasticciere e premendo sulla tela fate uscire tante palline sulla placca distanziate fra loro. Cuocete in forno preriscaldato a 180 gradi per 15-20 minuti. Ritirate e fate raffreddare."
+  },
+  {
+    "Nome": "Pasta Di Mandorle (3)",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Mandorle",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "100 G = Mandorle Pelate\r\n100 G = Zucchero A Velo\r\n2 = Albumi D'uovo\r\n1 Cucchiaio = Caffe Forte (o Rum) (o Maraschino)\r\nColore Alimentare Rosa\r\nColore Alimentare Verde",
+    "Preparazione": "Le dosi sono per 40 datteri o per 20 bonbon. Tritate finemente le mandorle, mescolate con lo zucchero a velo, incorporatevi gli albumi a neve ben soda. Aggiungete una puntina del colore preferito sciolto nel rum e lavorate in modo da ottenere una tinta omogenea. Farcite con un po' dell'impasto i datteri snocciolati e tagliati a meta oppure sistematelo tra due gherigli di noci. Volendo, versate sui dolcetti dello zucchero caramellato. Per i bonbon unite all'impasto di mandorle lo zucchero, l'albume e il cucchiaio di caffe o il maraschino, fate tante palline, rotolatele nello zucchero semolato, sistematele nei pirottini di carta."
+  },
+  {
+    "Nome": "Pasta Di Mandorle (4)",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Mandorle Dolci",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "1000 G = Mandorle Dolci Sbucciate Dopo Averle Immerse In Acqua Bollente\r\n1000 G = Zucchero\r\n6 = Mandorle Amare Di Albicocca",
+    "Preparazione": "Ricetta natalizia. Si macinano le mandorle al tritacarne, aggiungendo ogni tanto un cucchiaino d'acqua per non far asciugare troppo le mandorle e perdere il loro olio. Lo zucchero si mette in una casseruola al fuoco con un po' d'acqua, circa 300 g, per poter fare il giulebbe, e quando sta per filare, dopo circa 10 minuti, e prendendo una goccia tra pollice e indice si vede che fa il piccolo filo, si versano le mandorle macinate. Per fare questa preparazione senza bruciarsi e necessario prima bagnarsi le dita con un po' d'acqua fredda. Si cuoce la pasta di mandorle a fuoco lento, sempre girando per evitare che si attacchi al tegame. Quando si nota che comincia a staccarsi dalla casseruola, si può considerare cotta e si toglie dal fuoco. Si versa in un piatto e si lascia raffreddare. Quando la pasta e completamente fredda, si lavora e s'impasta con le mani, poi si può colorarla aggiungendo cacao amaro per farla diventare color cioccolato, polvere di cocciniglia o alchermes per farla diventare rossa o rosa, zafferano per il color giallo, e altri coloranti per dolci per gli altri colori. Dalla pasta di mandorle derivano una molteplicita di dolci nel Salento, di cui i piu famosi sono sicuramente il pesce natalizio e l'agnello dolce pasquale."
+  },
+  {
+    "Nome": "Pasta Di Mandorle (5)",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Mandorle Dolci",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "1000 G = Mandorle Dolci Sbucciate Dopo Averle Immerse In Acqua Bollente\r\n1000 G = Zucchero\r\n4 = Mandorle Amare Di Prugna",
+    "Preparazione": "Ricetta natalizia. Si macinano le mandorle al tritacarne, aggiungendo ogni tanto un cucchiaino d'acqua per non far asciugare troppo le mandorle e perdere il loro olio. Lo zucchero si mette in una casseruola al fuoco con un po' d'acqua, circa 300 g, per poter fare il giulebbe, e quando sta per filare, dopo circa 10 minuti, e prendendo una goccia tra pollice e indice si vede che fa il piccolo filo, si versano le mandorle macinate. Per fare questa preparazione senza bruciarsi e necessario prima bagnarsi le dita con un po' d'acqua fredda. Si cuoce la pasta di mandorle a fuoco lento, sempre girando per evitare che si attacchi al tegame. Quando si nota che comincia a staccarsi dalla casseruola, si può considerare cotta e si toglie dal fuoco. Si versa in un piatto e si lascia raffreddare. Quando la pasta e completamente fredda, si lavora e s'impasta con le mani, poi si può colorarla aggiungendo cacao amaro per farla diventare color cioccolato, polvere di cocciniglia o alchermes per farla diventare rossa o rosa, zafferano per il color giallo, e altri coloranti per dolci per gli altri colori. Dalla pasta di mandorle derivano una molteplicita di dolci nel Salento, di cui i piu famosi sono sicuramente il pesce natalizio e l'agnello dolce pasquale."
+  },
+  {
+    "Nome": "Risotto Agli Scampi",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Scampi",
+    "Persone": "2",
+    "Note": "-",
+    "Ingredienti": "150 G = Riso\r\n200 G = Scampi Piccoli\r\nPrezzemolo\r\n1 Spicchio = Aglio\r\nPeperoncino\r\nPoco = Vino Bianco\r\nOlio D'oliva\r\nSale",
+    "Preparazione": "Sgusciate gli scampi conservando teste, chele e gusci. Mettete a bollire per circa mezz'ora tutti questi scarti in 1/2 litro d'acqua alla quale avrete aggiunto il sale e un ciuffo di prezzemolo. Nel frattempo rosolate in quattro cucchiai d'olio un battuto d'aglio e prezzemolo e prima che questo prenda colore unite il riso. Girate per qualche minuto (attenzione il riso non deve bruciarsi) e poi bagnate con mezzo bicchiere di vino bianco. Portate a cottura il risotto aggiungendo, man mano che occorre, il brodo fatto con i gusci dei crostacei. Quando il riso e a meta cottura, unite la polpa degli scampi tagliata grossolanamente e proseguite fino a fine cottura. Questo risotto, semplice e delicato, può essere preparato anche con i gamberi o con qualsiasi altro crostaceo."
+  },
+  {
+    "Nome": "Risotto Agli Spinaci",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Spinaci",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "350 G = Riso\r\n100 G = Spinaci\r\n2 = Zucchine\r\n1 Costa = Sedano\r\n1 = Cipolla\r\nBurro\r\nOlio D'oliva\r\nFormaggio Parmigiano Grattugiato\r\nBrodo\r\nPepe\r\nSale",
+    "Preparazione": "Tritare la cipolla e gli spinaci e tagliare a dadini le altre verdure. Farle cuocere in olio e burro per circa 30 minuti poi unire il riso e farlo insaporire. Aggiungere poco per volta il brodo finche il riso sara cotto. Salare e pepare. Mantecare con un pezzetto di burro e servire con il parmigiano."
+  },
+  {
+    "Nome": "Risotto Agli Spinaci (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Spinaci",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "600 G = Spinaci\r\n280 G = Riso Vialone Nano (o Riso Carnaroli)\r\n1 Noce = Burro\r\n100 Cl = Brodo Vegetale\r\n2 Cucchiai = Olio D'oliva\r\n1 = Uovo\r\n4 Cucchiai = Formaggio Parmigiano Grattugiato\r\nSale",
+    "Preparazione": "Lavare gli spinaci e sminuzzarli grossolanamente. Mettere l'olio in una casseruola e farvi insaporire gli spinaci per 2-3 minuti. Unire il riso, farlo tostare leggermente, quindi aggiungere quasi tutto il brodo e far cuocere al dente avendo cura che non sia asciutto ne liquido ma all'onda. A parte mescolare il parmigiano all'uovo e incorporare il riso mescolando affinche l'uovo non si rapprenda. Mantecare con il burro e dopo 2 minuti servire."
+  },
+  {
+    "Nome": "Risotto Aglio Olio E Peperoncino Alla Pentola A Pressione",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Aglio",
+    "Persone": "8",
+    "Note": "-",
+    "Ingredienti":"Riso\r\nBrodo\r\nAglio\r\nOlio D'oliva\r\nPeperoncino",
+    "Preparazione": "Scaldare l'olio nella pentola a pressione, cuocere leggermente l'aglio (deve rimanere bianco) brillare il riso, aggiungere il brodo, chiudere la pentola; cuocere per 8 minuti circa, aggiungere il peperoncino, mantecare con un bicchiere d'acqua fredda mentre il fuoco e al massimo e servire."
+  },
+  {
+    "Nome": "Risotto Ai Calamaretti",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Calamaretti",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "500 G = Calamaretti Freschi\r\n200 G = Olive Nere\r\n300 G = Riso\r\nOlio D'oliva\r\nPrezzemolo\r\nAglio",
+    "Preparazione": "Preparate un trito di aglio e prezzemolo e mettetelo in un tegame con olio. Appena inizia a soffriggere, aggiungete i calamaretti. Cuocete il riso come un normale risotto e infine aggiungete le olive snocciolate e tagliate a pezzetti. Mescolate il tutto e servite ben caldo."
+  },
+  {
+    "Nome": "Risotto Ai Carciofi",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Carciofi",
+    "Persone": "6",
+    "Note": "-",
+    "Ingredienti": "500 G = Riso\r\n1 Confezione = Cuori Di Carciofo Surgelati\r\n1 = Cipolla\r\nOlio D'oliva Dietetico\r\n1 Manciata = Prezzemolo\r\nFormaggio Parmigiano\r\nBrodo Vegetale",
+    "Preparazione": "In una casseruola soffriggere la cipolla in poco olio dietetico; quando sara dorata, unirvi il riso mescolando sino a che non si sara impregnato di condimento. Unire il brodo e portare a meta cottura. Nel frattempo sgelare i carciofi, sminuzzarli e unirli al riso. Terminare la cottura. Prima di servire unire il prezzemolo tritato e cospargere di parmigiano."
+  },
+  {
+    "Nome": "Risotto Ai Carciofi (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Carciofi",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "400 G = Riso\r\n1 = Cipolla\r\n100 Cl = Brodo\r\n2 = Carciofi\r\n80 G = Burro\r\n50 G = Formaggio Grana Grattugiato\r\n1/2 Bicchiere = Vino Bianco\r\nOlio D'oliva",
+    "Preparazione": "Mondare i carciofi e tagliare a pezzetti i cuori. Tritare la cipolla e farla appassire in 30 g di burro e poco olio, unire i carciofi, mescolare e aggiungere il riso. Quando il riso sara leggermente tostato bagnarlo con il vino e lasciarlo evaporare. Portare il riso a cottura unendo poco per volta il brodo bollente. A fine cottura unire il burro rimasto, il grana, mescolare bene e servire."
+  },
+  {
+    "Nome": "Risotto Ai Carciofi (3)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Carciofi",
+    "Persone": "1",
+    "Note": "-",
+    "Ingredienti": "80 G = Riso\r\n2 = Carciofi\r\n20 G = Formaggio Grana\r\n10 G = Olio D'oliva\r\n3 Cl = Vino Bianco\r\nAglio\r\nCipolla\r\n1 Manciata = Prezzemolo",
+    "Preparazione": "Rosolare ii carciofi tagliati a fette sottili insieme alla cipolla tritata finissima, spruzzare il vino e aggiungere 1 manciata di prezzemolo. Versare il riso mescolando continuamente. Una volta insaporito, cominciare ad aggiungere il brodo vegetale a mestoli, senza smettere di mscolare fino a che il riso non risulta al dente. Prima di concludere la cottura, aggiungere il formaggio grattugiato."
+  },
+  {
+    "Nome": "Risotto Ai Filetti Di Persico",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Pesce Persico",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "400 G = Filetti Di Pesce Persico\r\n350 G = Riso Per Risotti\r\n75 Cl = Fumetto Di Pesce\r\n1 = Uovo\r\nPangrattato\r\n100 G = Burro\r\n1 Bicchiere = Vino Riesling\r\nSale",
+    "Preparazione": "Salare e panare i filetti di pesce con uovo e pangrattato; friggerli nel burro rosso; tenerli in caldo. In una piccola noce di burro tostare il riso; sfumare col vino, quindi aggiungere il brodo in una sola volta, dare una girata e far cuocere coperto senza girare più. Predisporre il riso nei piatti singoli, adagiarvi sopra i filetti di pesce e irrorare col burro della frittura."
+  },
+  {
+    "Nome": "Risotto Ai Finocchi",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Finocchi",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "200 G = Riso\r\n5 = Finocchi\r\n1 = Cipolla\r\nBrodo\r\nFormaggio Parmigiano Grattugiato\r\nOlio D'oliva\r\nSale\r\nPepe",
+    "Preparazione": "Stufare la cipolla in poco olio e brodo per qualche minuto. Tagliare a fettine sottili i cuori dei finocchi, unirli alla cipolla e far rosolare per 10 minuti Salare e pepare, unire il riso, lasciarlo tostare per qualche minuto, poi, poco alla volta, aggiungere il brodo e portare a cottura. Servire con il parmigiano."
+  },
+  {
+    "Nome": "Risotto Ai Finocchi (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Finocchi",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "200 G = Riso\r\n5 = Finocchi\r\n1 = Cipolla\r\n3 Cucchiai = Brodo\r\nFormaggio Grana Grattugiato\r\nSale\r\nPepe",
+    "Preparazione": "Sbucciare e tritare la cipolla; versare in una casseruola 3 cucchiai di brodo, unire la cipolla e farla stufare a fuoco basso per 2 minuti. Mondare e lavare i finocchi, eliminare le foglie esterne e utilizzare solo i cuori; tagliarli a fettine, unirli alla cipolla, farli rosolare per 10 minuti. Salare, pepare, poi unire il riso, lasciarlo tostare e bagnarlo con un mestolo di brodo e cuocere per 20 minuti, aggiungendo poco alla volta brodo bollente. Servire con grana grattugiato."
+  },
+  {
+    "Nome": "Risotto Ai Fiori Di Zucca",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Fiori Di Zucca",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "350 G = Riso\r\nOlio D'oliva\r\nBurro\r\n1 = Cipolla\r\nZafferano\r\nBrodo Di Dado\r\n500 G = Fiori Di Zucca\r\n1 = Uovo\r\n2 Cucchiai = Farina\r\nSale",
+    "Preparazione": "Soffriggere la cipolla tritata e 2-3 dei fiori di zucca a pezzetti. Unire il riso e portare a cottura con il brodo. Poco prima di togliere dal fuoco unire lo zafferano e il burro. Nel frattempo fare una pastella con l'uovo, la farina e l'acqua. Passare i rimanenti fiori di zucca nella pastella, friggerli e servirli con il risotto."
+  },
+  {
+    "Nome": "Risotto Ai Formaggi",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Formaggio Fontina",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "400 G = Riso\r\n40 G = Formaggio Fontina\r\n40 G = Formaggio Olandese\r\n40 G = Mozzarella\r\n4 Cucchiai = Formaggio Parmigiano\r\n4 Cucchiai = Olio D'oliva",
+    "Preparazione": "Cuocere il riso al dente, scolarlo e rimetterlo nel tegame di cottura. Unire i formaggi tagliati a dadini e l'olio. Scaldare il tutto a fuoco basso fino a che i formaggi non si saranno sciolti. Unire il parmigiano e servire caldo."
+  },
+  {
+    "Nome": "Risotto Ai Formaggi (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Formaggio",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "250 G = Riso\r\n100 Cl = Brodo Di Carne Filtrato E Sgrassato\r\n1 Cucchiaio = Olio D'oliva\r\n100 G = Formaggi Vari (formaggio Emmenthal, Formaggio Grana, Formaggio Cremino)\r\nSale (facoltativo)\r\n1 Noce = Burro (facoltativo)",
+    "Preparazione": "Mettere in una casseruola il brodo, quando bolle versare il riso e l'olio. Far assorbire tutto il brodo, (se necessario aggiungere poco sale) poi aggiungere i formaggi e farli sciogliere bene. Si può aggiungere una noce di burro."
+  },
+  {
+    "Nome": "Risotto Ai Friarielli",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Riso",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "350 G = Riso\r\n600 G = Friarielli Puliti\r\n3 Spicchi = Aglio\r\n4 Cucchiai = Olio D'oliva\r\n50 G = Burro\r\n1 = Cipolla Piccola\r\n1/2 Bicchiere = Vino Bianco Secco\r\nSale\r\n1 Pizzico = Pepe\r\nFormaggio Parmigiano Grattugiato\r\nFormaggio Pecorino Grattugiato",
+    "Preparazione": "Scaldare i friarielli, scolarli conservando l'acqua, e tagliuzzarli in piccoli pezzi. Fare rosolare l'aglio in una padella, unire i friarielli e farli insaporire lentamente. A parte in un'altra casseruola imbiondire la cipolla tritata con burro, tostare il riso, bagnare con vino bianco (preferibilmente Falanghina di Pozzuoli) e farlo evaporare completamente. Portare a cottura il risotto aggiungendovi poco per volta l'acqua di cottura dei friarelli bollente, mescolando continuamente. A meta cottura unire i friarelli con un pizzico di pepe, assaggiare il sale. A cottura ultimata incorporare il formaggio amalgamandolo bene al riso e servire."
+  },
+  {
+    "Nome": "Risotto Ai Frutti Di Mare",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Frutti Di Mare",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "300 G = Riso\r\n1200 G = Frutti Di Mare (cozze, Vongole, Tartufi)\r\n2 Spicchi = Aglio\r\n1 = Scalogno\r\n2 Rametti = Origano\r\n1 Ciuffo = Basilico\r\n1/2 Bicchiere = Vino Bianco Secco\r\nBrodo Vegetale\r\n5 Cucchiai = Olio D'oliva\r\nSale\r\nPepe",
+    "Preparazione": "Spazzolate bene i frutti di mare, quindi fateli aprire, tutti insieme, in 2 cucchiai d'olio aromatizzato da uno spicchio d'aglio intero leggermente schiacciato. Appena aperti, sgusciateli tutti (tranne alcuni che serviranno per guarnire) e teneteli da parte; conservate anche il liquido di cottura filtrato. Per il risotto soffriggete in 2 cucchiai di olio, lo scalogno tritato e uno spicchio d'aglio intero; unite quindi il riso, fatelo crogiolare a fuoco vivo, salatelo, sfumatelo con il vino bianco e, non appena questo sara evaporato, proseguite la cottura, unendo del brodo vegetale e qualche mestolo del liquido dei frutti di mare (saranno sufficienti un paio di mestolini, perche e piuttosto salato). A cottura quasi terminata, aggiungete al riso i frutti di mare sgusciati e completate con 1 cucchiaio d'olio crudo, pepe macinato e un trito di origano e basilico. Distribuite il riso nei piatti da porzione, guarnite ogni piatto con alcuni frutti di mare nel guscio, un ciuffetto di basilico e servite subito."
+  },
+  {
+    "Nome": "Risotto Ai Frutti Di Mare (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Pesce",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "400 G = Riso\r\n1 = Cipolla\r\n2 Cucchiai = Olio D'oliva\r\n1 Spicchio = Aglio\r\n500 G = Pomodori Pelati\r\n2000 G = Pesce (polipi, Vongole, Peoci, Datteri Di Mare)\r\nPrezzemolo\r\nOrigano",
+    "Preparazione": "Cuocete il riso in acqua salata e poi scolatelo. Soffriggete la cipolla con l'olio, l'aglio e il prezzemolo tritati e i pomodori passati. Lessate a parte i polipi, le vongole, i peoci, i datteri di mare e aggiungeteli, tritati, nel sugo di pomodoro. Condite con il sugo il riso e spolverate con origano."
+  },
+  {
+    "Nome": "Risotto Ai Funghi",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Funghi",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "300 G = Funghi\r\n400 G = Riso\r\n100 G = Burro\r\n1 Pugno = Formaggio Parmigiano Grattugiato\r\n1 = Cipolla\r\n50 Cl = Brodo",
+    "Preparazione": "Soffriggere la cipolla tritata con 80 g di burro. Aggiungere i funghi, farli insaporire, unire il riso e dopo 6-7 minuti versare il brodo caldissimo. Cuocere a fuoco moderato e, se necessario, aggiungere altro brodo caldo. Controllare il sale. Prima di servire unire il resto del burro e un pugno di parmigiano grattugiato."
+  },
+  {
+    "Nome": "Risotto Ai Funghi E Frutti Di Mare",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Funghi Porcinelli",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "500 G = Cozze\r\n250 G = Funghi Porcinelli\r\n320 G = Riso Carnaroli\r\nOlio D'oliva Extra-vergine\r\n150 Cl = Brodo Vegetale\r\nVino Bianco\r\nAglio\r\nPrezzemolo\r\n1 Noce = Burro\r\nPoco = Sale Marino\r\nPepe Bianco",
+    "Preparazione": "Pulire e aprire le cozze conservando la loro acqua. Brasare i funghi con aglio e olio e poco sale. A parte imbiondire brevemente aglio e prezzemolo in poco olio; unire il riso e tostarlo, poi il vino; far evaporare. Unire l'acqua delle cozze e portare a cottura col brodo. Verso la fine unire cozze e funghi. A cottura ultimata mantecare con una noce di burro."
+  },
+  {
+    "Nome": "Risotto Ai Funghi Porcini",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Funghi Porcini Secchi",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "350 G = Riso\r\n40 G = Funghi Porcini Secchi\r\nBrodo Di Carne\r\n100 G = Panna Da Cucina\r\nFormaggio Parmigiano Grattugiato\r\nOlio D'oliva\r\nBurro\r\n1 = Cipolla",
+    "Preparazione": "Mettete a bagno in acqua tiepida i funghi porcini secchi almeno 1 ora prima. Fate rosolare in una pentola una cipolla con un poco d'olio e burro e poi aggiungete i funghi ben scolati. Unite il riso e bagnate con il brodo fino a quando non sara cotto. A cottura ultimata versate la panna da cucina e spolverate con il parmigiano."
+  },
+  {
+    "Nome": "Risotto Ai Funghi Porcini (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Funghi Porcini",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "500 G = Funghi Porcini\r\n350 G = Riso Carnaroli\r\nOlio D'oliva Extra-vergine\r\nCipolla\r\nAglio\r\nRosmarino\r\nSalvia\r\nVino Bianco\r\nSale Marino Integrale\r\nBrodo Vegetale\r\nFormaggio Parmigiano Grattugiato\r\n1 Noce = Burro\r\nPer Guarnire:\r\nPrezzemolo Tritato",
+    "Preparazione": "Mondare i funghi, tagliarli a fettine e brasarli con aglio e olio e un po' di sale. A parte far imbiondire la cipolla finemente tritata con salvia e rosmarino; unire il riso, tostarlo e sfumare col vino. Unire i funghi e brodo vegetale; cuocere all'onda. A fuoco spento amalgamarvi il parmigiano e una noce di burro. Guarnire con prezzemolo tritato."
+  },
+  {
+    "Nome": "Risotto Ai Gamberetti",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Gamberetti",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "200 G = Gamberetti\r\n350 G = Riso\r\n4 Bicchieri = Vino Spumante Secco\r\n1 = Cipolla\r\n60 G = Burro\r\nBrodo Di Dado\r\nSale",
+    "Preparazione": "Far imbiondire 1/2 cipolla finemente tritata nel burro, unire i gamberetti e farli insaporire per qualche minuto. Bagnare con 2 bicchieri di spumante e far consumare a fuoco dolce. Rosolare l'altra 1/2 cipolla nel rimanente burro e unire il riso. Far insaporire e portare quasi a cottura aggiungendo poco alla volta il brodo caldo. Unire il rimanente spumante, regolare di sale e ultimare la cottura. Servire con i gamberetti caldi."
+  },
+  {
+    "Nome": "Risotto Ai Gamberi",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Gamberi",
+    "Persone": "4",
+    "Note": "Luogo: Campania.",
+    "Ingredienti": "350 G = Riso\r\n400 G = Gamberi\r\n1/2 = Cipolla\r\n1/2 Spicchio = Aglio\r\n2 Bicchieri = Vino Bianco\r\n1 Ciuffo = Prezzemolo\r\n125 Cl = Brodo (possibilmente Di Pesce)\r\nSale\r\nPepe",
+    "Preparazione": "Pulite i gamberi, privateli delle teste e sgusciateli. Tritate finemente la cipolla e l'aglio e metteteli in una casseruola con le teste dei gamberi e un mestolo di vino bianco. Ponete tutto sul fuoco e lasciate cuocere per una decina di minuti, poi levate le teste, sgocciolandole bene, e buttatele. Nel fondo di cottura versate il riso, fatelo tostare un poco quindi irrorate con il rimanente vino bianco e, quando questo e evaporato, portate a cottura diluendo poco alla volta con il brodo. Quattro minuti prima del termine di cottura unite al risotto anche le code sgusciate dei gamberi e il prezzemolo lavato e tritato finemente. Servite il risotto ben caldo avendo cura che resti abbastanza morbido."
+  },
+  {
+    "Nome": "Risotto Ai Mirtilli",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Mirtilli",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "440 G = Riso\r\n60 G = Mirtilli\r\n40 G = Burro\r\n6 Cl = Vino Rosso\r\n12 Cl = Latte Intero\r\n100 Cl = Brodo\r\n30 G = Formaggio Parmigiano",
+    "Preparazione": "Pulite i mirtilli strofinandoli con molta delicatezza con un telo inumidito. Metteteli in una casseruola con il burro e fateli appassire su fuoco molto dolce per qualche minuto, mescolando. Aggiungete il riso, lasciatelo insaporire mescolando, poi aggiungete anche il vino e alzate la fiamma. Quando il vino e evaporato iniziate ad aggiungere anche il brodo bollente a mestoli, unendone altro man mano che viene assorbito. A cottura ultimata e a fornello spento unite latte sufficiente per un risotto 'all'onda'. Mescolate e completate il piatto con qualche cucchiaiata di formaggio."
+  },
+  {
+    "Nome": "Risotto Ai Moscardini",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Moscardini",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "200 G = Moscardini\r\n1 Spicchio = Aglio\r\nPrezzemolo Tritato\r\nOlio D'oliva Extra-vergine\r\n400 G = Riso\r\nVino Bianco\r\n1 Mestolo = Brodo Di Verdure\r\n1 Bustina = Zafferano\r\nSale\r\nPepe",
+    "Preparazione": "Mondare, lavare e tagliare a pezzi i moscardini. Scaldare in una casseruola l'olio con lo spicchio d'aglio schiacciato e quando sara dorato, toglierlo, unendo il prezzemolo, i moscardini e lasciarli rosolare, mescolando. Aggiungere il riso e far insaporire, sempre mescolando. Bagnare con il vino, farlo evaporare e poi unire 1 mestolo di brodo e lo zafferano. Cuocere il risotto, unendo ancora brodo caldo. Salare e pepare."
+  },
+  {
+    "Nome": "Risotto Ai Porri",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Porri",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "300 G = Riso\r\n50 G = Burro\r\n3 = Porri Grandi\r\n150 Cl = Brodo\r\n1/2 Bicchiere = Vino Bianco\r\n1 Bustina = Zafferano\r\n2 Foglioline = Salvia\r\n50 G = Formaggio Grana Grattugiato\r\nSale",
+    "Preparazione": "In una pentola fate scaldare il brodo. Nel frattempo, ponete in un'altra casseruola meta del burro e lasciatevi colorire i porri finemente tritati. Quando i porri cominceranno a dorare, unite a pioggia il riso, mescolate e fatelo tostare. Bagnate con il vino bianco e lasciate evaporare a fuoco vivace. Aggiungete un mestolo di brodo caldo. Lasciatelo assorbire e poi unite, a mano a mano, il brodo caldo necessario e mescolate ripetutamente facendolo assorbire ogni volta. A circa meta cottura, aggiungete lo zafferano diluito ¡n mezzo mestolo di brodo. Quando il riso sara cotto, regolate di sale, spegnete il fuoco e mantecate con il formaggio grattugiato. Fate sciogliere in un tegamino il burro rimasto, profumandolo con le foglie di salvia e incorporatelo al risotto. Mescolate, lasciate riposare un paio di minuti, quindi servite. II risotto coi porri va presentato all'onda, ben caldo, e di colore spiccatamente giallo, senza lesinare con lo zafferano."
+  },
+  {
+    "Nome": "Risotto Ai Porri (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Porri",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "4 = Porri Mondati\r\n1/2 Cucchiaio = Zucchero\r\n1 Cucchiaio = Pomodori Secchi Sott'olio\r\n1 Pizzico = Cannella\r\nSale\r\nPepe\r\n500 G = Riso Arborio\r\n1 Cucchiaio = Scorza Di Limone Grattugiata\r\n50 Cl = Brodo\r\n200 G = Prezzemolo Finemente Sminuzzato",
+    "Preparazione": "In una larga padella antiaderente, fate scaldare l'olio su fuoco basso. Aggiungere il porro a rondelle e lo zucchero, e far scaldare fino a quando non si ammorbidisce. Unire i pomodorini, la cannella, il sale e il pepe e il riso. Cuocere per pochi minuti, mescolando spesso. Versare la scorza di limone, il brodo e il prezzemolo. Cuocere e mescolare per circa 15 minuti. Togliere dal fuoco, tenere coperto per circa 20 minuti, per far assorbire tutto il liquido dal riso. Adesso e pronto per essere servito."
+  },
+  {
+    "Nome": "Risotto Ai Porri (3)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Porri",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "1000 G = Porri\r\n4 Mestoli = Riso Integrale Precotto\r\n1 Bustina = Zafferano\r\n1 Bicchiere = Vino Bianco\r\n2 Cucchiai = Olio D'oliva\r\n30 G = Burro\r\nFormaggio Parmigiano Grattugiato\r\nSale\r\nPepe\r\n4 Cucchiai = Brodo Vegetale",
+    "Preparazione": "Tagliare a rondelle i porri e farli stufare coperti con 4 cucchiai di brodo vegetale e 2 di olio. Unire il riso, far insaporire qualche minuto, quindi bagnare con il vino. Far evaporare e aggiungere man mano brodo vegetale secondo necessita facendo cuocere per 15 minuti. Unire lo zafferano. Trascorsi altri 5 minuti togliere dal fuoco, unire il parmigiano, mescolare e mantecare con una noce di burro."
+  },
+  {
+    "Nome": "Torta Alla Crema Al Burro",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Burro",
+    "Persone": "8",
+    "Note": "-",
+    "Ingredienti":"Per La Pasta:\r\n170 G = Farina\r\n30 G = Cacao Amaro In Polvere\r\n200 G = Zucchero\r\n50 G = Burro\r\n8 = Uova\r\nLievito Per Dolci\r\nPer La Crema:\r\n350 G = Burro\r\n150 G = Zucchero A Velo\r\n25 G = Cacao Amaro\r\n4 Cucchiai = Rum Scuro\r\n300 G = Cioccolato Amaro (tavolette O Gocce)",
+    "Preparazione": "Prepara la pasta della torta mettendo in una ciotola le uova (solo il tuorlo) e lo zucchero. Sbattili con la frusta elettrica fino a renderli cremosi. Fai sciogliere in un pentolino il burro a fuoco lento senza farlo friggere (attenta perche se frigge può dare un cattivo sapore alla pasta). Setaccia la farina mescolata al cacao (ciò evita di vedere 'volare' via il cacao) unendola alle uova lentamente con un cucchiaio e amalgamandovi anche il burro. Setaccia anche il lievito e mettilo nell'impasto. Monta a neve con una frusta pulita e asciutta gli albumi dell'uovo ed uniscili all'impasto mescolando dal basso all'alto (e importante per gonfiare bene l'impasto: non mescolare come si fa di solito in senso orario). Distrubuisci la miscela nella tortiera unta ed infarinata (meglio usare una di quelle tortiere a cerniera, sono molto comode), e metti nel forno gia caldo a 180 gradi per 25 minuti. Dopo tale tempo di cottura verifica aprendo il forno se la torta e ben cotta anche all'interno infilando uno stecchino: deve uscire pulito e non bagnato. Prepara la crema frullando il burro ammorbidito e lo zucchero, passa al setaccio il cacao e mescolalo alla crema insieme al rum. Taglia la torta a meta, spalma sulla meta inferiore meta della crema ricopri con il disco superiore e spalma su tutta la superficie la crema al burro. Trita il cioccolato e distribuiscilo sulla superficie e sui lati della torta. Si può decorare con fiocchi di panna montata lungo il bordo."
+  },
+  {
+    "Nome": "Torta Alla Frutta D'alsazia",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Pere",
+    "Persone": "8",
+    "Note": "-",
+    "Ingredienti": "250 G = Pere\r\n125 G = Mele\r\n125 G = Pesche\r\n125 G = Susine\r\n100 G = Fichi Secchi\r\n100 G = Prugne Secche\r\n500 G = Farina\r\n1 = Uovo\r\n1 = Tuorlo D'uovo\r\n200 G = Burro\r\n15 G = Lievito Di Birra\r\n50 G = Cedro Candito\r\n25 G = Angelica Candita\r\n100 G = Uvetta Sultanina\r\n70 G = Nocciole\r\n70 G = Mandorle\r\n70 G = Gherigli Di Noci\r\n20 G = Scorza D'arancia Candita\r\n75 G = Datteri\r\n1 Bicchierino = Kirsch\r\n1 Cucchiaio = Zucchero\r\nSale",
+    "Preparazione": "Disponete la farina a fontana. Colatevi al centro i tuorli lavorati a crema col burro e l'albume battuto a neve con un pizzico di sale; aggiungete una tazzina d'acqua tiepida in cui sia stato sciolto il lievito e manipolate il tutto, unendovi ancora quanta acqua tiepida occorra per ottenere una pasta liscia ed elastica, di media consistenza, da avvolgere a palla e mettere dentro un recipiente, coperta, a lievitare per 2 ore in luogo riparato. Sbucciate le pere, le mele, le pesche e le susine; mondatele e tagliatele a pezzetti; raccoglietele in casseruola con un trito di fichi e prugne secche, e cuocetele con poca acqua e zucchero. Poi, aggiungetevi la frutta candita tagliata a dadolini e l'uvetta sultanina, ammollata nella grappa. Quando la pasta sara lievitata, tornate a batterla energicamente, aggiungendovi, poco alla volta, le noci, le nocciole e le mandorle, la buccia d'arancia e i datteri a pezzetti. Versate il preparato in una teglia e ponetelo in forno preriscaldato a 160 gradi, per un'ora e tre quarti."
+  },
+  {
+    "Nome": "Torta Alla Glassa D'arancia",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Arance",
+    "Persone": "6",
+    "Note": "-",
+    "Ingredienti": "100 G = Farina\r\n100 G = Burro\r\n200 G = Zucchero A Velo\r\n100 G = Zucchero\r\n2 = Uova\r\n4 G = Lievito In Polvere\r\n2 = Arance",
+    "Preparazione": "Spezzettate il burro, raccoglietelo in un tegamino e lasciatelo fondere a bagnomaria a fuoco basso. In una larga terrina lavorate a lungo le uova con lo zucchero semolato e 100 g di zucchero a velo. Quando il composto ha raggiunto una consistenza gonfia, bianca e spumosa setacciatevi la farina e il lievito. Mescolate e ammorbidite il composto con il succo di un'arancia. Imburrate uno stampo e versatevi il composto. Cuocete in forno preriscaldato a 180 gradi per 20-25 minuti, il dolce deve risultare morbido. Nel frattempo preparate la glassa: spremete l'altra arancia, mescolate il succo con il restante zucchero a velo. Ritirate il dolce, lasciate raffreddare, sformatelo sul piatto da portata, copritelo con la glassa spalmandola in modo uniforme. Fate rassodare tenendo al fresco. Servite. Vini di accompagnamento: Asti DOCG, Castel San Lorenzo Moscato “Spumante” DOC, Moscato Di Sardegna “Spumante” DOC."
+  },
+  {
+    "Nome": "Torta Alla Manon",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Farina Di Mandorle",
+    "Persone": "8",
+    "Note": "-",
+    "Ingredienti": "500 G = Pasta Sfoglia Surgelata\r\n3 = Tuorli D'uovo\r\n200 G = Farina Di Mandorle\r\n150 G = Burro\r\n1 Pizzico = Vaniglina\r\n1 Bustina = Zucchero A Velo",
+    "Preparazione": "Lasciate scongelare la pasta naturalmente; spianatela sottile in modo da ottenere due quadrati (o rettangoli) uguali. Sistemate una delle due sfoglie sul fondo di una teglia unta. Lavorate a crema in una fondina i tuorli con lo zucchero. Ottenuto un composto omogeneo, incorporatevi il burro; mescolatevi la farina di mandorle e la vaniglina. Stendete questo composto sulla sfoglia di fondo e copritelo con la seconda sfoglia, sigillando con cura i bordi ed eliminando le frange in eccesso. Mettete la teglia in forno preriscaldato a 220 gradi, per una ventina di minuti. A cottura, ultimata, cospargete la torta di zucchero a velo e ripassatela in forno per 5 minuti, in modo che possa caramellarsi in superficie."
+  },
+  {
+    "Nome": "Torta Alla Mazzarino",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Mandorle",
+    "Persone": "10",
+    "Note": "-",
+    "Ingredienti":"Per La Pasta Frolla:\r\n140 G = Burro\r\n30 G = Zucchero A Velo\r\n1/2 Stecca = Vaniglia\r\n1 Pizzico = Sale\r\n1 = Tuorlo D'uovo\r\n200 G = Farina\r\nBurro Per La Teglia\r\nFarina Per La Teglia\r\nPer Farcire:\r\n150 G = Burro\r\n150 G = Zucchero A Velo\r\n1 = Limone (scorza Grattugiata)\r\n2 = Uova\r\n150 G = Mandorle Tritate\r\n30 G = Farina",
+    "Preparazione": "Setacciate la farina sulla spianatoia, disponendola a fontana, formate un incavo al centro e ponetevi il burro, ammorbidito e a pezzetti, un tuorlo d'uovo, una presa di sale, l'interno della stecca di vaniglia raschiato con un coltello e lo zucchero a velo. Lavorate velocemente gli ingredienti fino ad ottenere un impasto omogeneo, raccoglietelo a palla e fatelo riposare in frigorifero per almeno due ore. Trascorso il tempo indicato, stendete la pasta sulla spianatoia infarinata, servendovi del matterello, e usate la sfoglia ottenuta per rivestire il fondo e i bordi di una teglia di 26 cm di diametro, imburrata e cosparsa di farina. Bucherellate la frolla con i rebbi di una forchetta e fatela cuocere a bianco, in modo che il guscio di pasta rimanga molto chiaro. Preparate la farcia: ponete in una terrina il burro ammorbidito, lo zucchero e la scorza grattugiata del limone e lavorateli fino a ottenere un composto gonfio e omogeneo. Incorporatevi le uova, uno alla volta, poi le mandorle e infine la farina. Mescolate con cura, quindi distribuite il composto ottenuto all'interno del guscio di pasta ormai cotto e livellatene la superficie. Fate cuocere la crostata nel forno (190 gradi) per circa 40 minuti, o fino a quando la superficie sara ben dorata. A piacere potete cospargere la superficie del dolce con zucchero a velo oppure rivestirlo con uno strato di glassa fondente aromatizzata al rum."
+  },
+  {
+    "Nome": "Torta Alla Ricotta",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Ricotta",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "200 G = Ricotta\r\n200 G = Farina\r\n200 G = Zucchero\r\n2 = Uova\r\n1 Bustina = Lievito Per Dolci\r\n1 = Limone (scorza Grattugiata)\r\n1 = Arancia (scorza Grattugiata)\r\n1 Bustina = Vaniglina\r\nBurro\r\nSale",
+    "Preparazione": "Passare al setaccio la ricotta e raccoglierla in una terrina; unirvi a pioggia la farina, poi incorporarvi lo zucchero, il sale, il lievito, la vaniglina e la scorza degli agrumi grattugiata, sempre mescolando. Unire i tuorli e poi gli albumi montati a neve. Imburrare una teglia e rovesciarvi il composto. Mettere in forno caldo a 180 gradi e far cuocere per 40 minuti circa."
+  },
+  {
+    "Nome": "Torta Alla Rucola E Taleggio",
+    "Tipo_Piatto": "Antipasto",
+    "Ing_Principale": "Insalata Rucola",
+    "Persone": "6",
+    "Note": "-",
+    "Ingredienti": "200 G = Farina\r\n100 G = Burro\r\n1 Cucchiaio = Maggiorana\r\n1 Cucchiaio = Semi Di Papavero\r\nSale\r\nPer Il Ripieno:\r\n300 G = Formaggio Philadelphia\r\n200 G = Insalata Rucola\r\n200 G = Formaggio Taleggio\r\n2 = Uova\r\n2 Cucchiai = Pangrattato\r\nSale\r\nPepe",
+    "Preparazione": "Disponete a fontana la farina, cospargete un cucchiaio di semi di papavero e uno di maggiorana, lavorate unendo a poco a poco il burro freddo a pezzetti. Incorporate acqua quanto basta per ottenere una pasta morbida. Copritela con la pellicola trasparente e aiutandovi con un matterello date la forma di un piccolo mattone. Lasciate riposare per un'ora. Pulite la rucola, sbollentatela per pochi minuti in acqua salata. Sgocciolatela, strizzatela e frullatela a bassa velocita incorporando i due formaggi, il pangrattato, le uova. Salate e pepate. Stendete ora la pasta a disco e foderate una teglia imburrata facendola risalire un po' anche lungo le pareti. Riempitela con il composto di erbe, ripiegate un pochino il bordo tutt'intorno. Decorate con una grata ottenuta dai ritagli della pasta. Cuocete in forno a 180 gradi per 40 minuti circa. Vini di accompagnamento: Valcalepio Rosso DOC, Montepulciano D'Abruzzo Rosso DOC, Savuto DOC."
+  },
+  {
+    "Nome": "Torta Alla Senese",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Noci",
+    "Persone": "4",
+    "Note": "Luogo: Toscana. Luogo: Siena.",
+    "Ingredienti": "100 Cl = Latte\r\n300 G = Riso\r\n200 G = Zucchero\r\n3 = Uova\r\n70 G = Uvetta Sultanina\r\n8 = Gherigli Di Noci\r\n50 G = Pinoli\r\n60 G = Burro\r\n1 Bustina = Lievito\r\n1/2 = Limone (scorza Grattugiata)",
+    "Preparazione": "Scaldare il latte, unirvi il riso e lo zucchero. Far cuocere finche il latte sara assorbito, far raffreddare, poi aggiungere le uova, l'uvetta, i gherigli di noci, i pinoli, il burro ammorbidito, il lievito e la buccia di limone grattugiata e amalgamare il tutto. Versare il composto in uno stampo imburrato e cuocere in forno gia caldo a 200 gradi per 30 minuti. Servire la torta fredda."
+  },
+  {
+    "Nome": "Torta Alle Banane",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Banane",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "1 Confezione = Pasta Sfoglia\r\n2 = Banane Mature\r\n1 = Limone (succo)\r\n100 G = Cacao\r\n20 Cl = Latte\r\n60 G = Zucchero\r\n1 Cucchiaio = Farina\r\n1 = Tuorlo D'uovo",
+    "Preparazione": "Srotolate la pasta sfoglia e con la carta rivestite una tortiera facendola aderire bene ai bordi, bucherellate il fondo con una forchetta e fatela cuocere in forno gia caldo a 220 gradi per 15 minuti. Preparare nel frattempo il ripieno: frullate le banane, con succo di limone e un cucchiaio di zucchero. Battete il tuorlo con lo zucchero rimanente, unite la farina e il latte, portate a bollore e fate addensare, aggiungete alla crema il cioccolato grattugiato e mescolate con cura, aggiungete la crema al frullato di banane e frullate finche avrete una crema liscia. Togliete la tortiera dal forno, trasferite la crema levigando bene la superficie, rimettete in forno la tortiera e continuate la cottura per altri 20 minuti. Lasciare raffreddare e servite."
+  },
+  {
+    "Nome": "Torta Alle Carote",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Carote",
+    "Persone": "8",
+    "Note": "-",
+    "Ingredienti": "200 G = Burro\r\n400 G = Zucchero\r\n300 G = Mandorle\r\n1 = Limone (scorza Grattugiata)\r\n50 G = Rum\r\n2 = Tuorli D'uovo\r\n250 G = Farina\r\n6 = Uova Intere\r\n8 G = Lievito Vanigliato\r\n650 G = Carote",
+    "Preparazione": "Passare alla raffinatrice le mandorle e lo zucchero, unire la farina con il lievito passandola poi al setaccio; montare il burro con le mandorle e aggiungervi le uova e i rossi uno per volta. Unirvi poi il limone grattugiato, il rum, la vaniglia, la farina e infine le carote grattugiate creando un impasto omogeneo. Imburrare una teglia vuotarvici l'impasto e cuocere in forno caldo a 180 gradi per un'ora."
+  },
+  {
+    "Nome": "Torta Alle Carote (2)",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Carote",
+    "Persone": "4",
+    "Note": "Luogo: Svizzera.",
+    "Ingredienti": "200 G = Mandorle Pelate\r\n150 G = Carote\r\n120 G = Zucchero Di Canna\r\n40 G = Farina\r\n3 = Uova\r\n1/2 Bustina = Lievito Per Dolci\r\n2 Cucchiai = Pangrattato\r\n1 Cucchiaino = Brandy\r\nSale\r\nPer La Teglia:\r\nBurro\r\nPer La Glassa:\r\n150 G = Zucchero A Velo\r\n2 Cucchiaini = Rum\r\n2 Cucchiaini = Succo Di Limone",
+    "Preparazione": "Lavate le carote, asciugatele e grattugiatele finemente. Sbattete i tuorli d'uovo con sbattete questi ultimi con lo zucchero ed un pizzico di sale. Nel frattempo mescolate la farina con il lievito, e unitela all'uovo sbattuto. Versatevi inoltre le mandorle macinate, le carote grattugiate e il brandy. Montate gli albumi a neve e aggiungeteli all'impasto. Ponete quindi il tutto in uno stampo ben imburrato e cosparso di pangrattato e fate cuocere in forno caldo a 200 gradi per circa un'ora. Preparate la glassa: lavorate lo zucchero a velo, il rum e il succo di limone e ricoprite il dolce dopo averlo fatto raffreddare."
+  },
+  {
+    "Nome": "Torta Alle Castagne",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Castagne",
+    "Persone": "16",
+    "Note": "-",
+    "Ingredienti": "210 G = Purea Di Castagne\r\n8 = Tuorli D'uovo\r\n1 Stecca = Vaniglia\r\n1 Cucchiaino = Cannella\r\n220 G = Zucchero A Velo\r\n6 = Albumi D'uovo\r\n90 G = Farina\r\n16 = Castagne Di Marzapane\r\nPer Farcire:\r\n200 G = Purea Di Castagne\r\n1 Cl = Rum\r\n100 G = Zucchero A Velo\r\n25 Cl = Panna\r\n3 Fogli = Colla Di Pesce\r\n100 G = Glassa Di Albicocche\r\n400 G = Glassa Al Cioccolato\r\n2 Cucchiai = Pistacchi Tritati Finemente",
+    "Preparazione": "Passate al setaccio la purea di castagne raccogliendola in una terrina, quindi mescolatevi i tuorli, l'interno della stecca di vaniglia, la cannella ed un terzo dello zucchero a velo. In una ciotola montate a neve gli albumi con il resto dello zucchero a velo, aggiungendolo in due volte, ed incorporateli al composto di tuorli; unite anche la farina setacciata. Mettete l'impasto in una teglia imburrata e infarinata e cuocetelo in forno a 170 gradi per 45 minuti. Lasciate raffreddare e riposare coperto per una notte. Preparate la farcitura: in una terrina mescolate la purea di castagne con il rum e lo zucchero a velo. In una ciotola montate la panna ed incorporatevi la colla di pesce, ammollata, strizzata e fatta sciogliere in poco latte caldo, quindi mescolate la panna alla purea di frutta. Tagliate la pasta in tre dischi. Spalmate meta della crema alle castagne sul primo disco, coprite con il secondo disco, e formate su quest'ultimo uno strato con il resto della crema. Appoggiatevi sopra l'ultimo disco, premendo leggermente, e distribuite sui lati del dolce la crema eventualmente fuoriuscita. Fate riposare in frigorifero per 30 minuti. Scaldate la glassa di albicocche, rivestitene completamente la torta, quindi copritela con la glassa al cioccolato. Immergete la base delle castagne di marzapane in poca glassa al cioccolato liquida, fatevi aderire i pistacchi tritati e usatele per guarnire la torta. Infine, usando un coltello appuntito, disegnate sul rivestimento di cioccolato le 16 fette."
+  },
+  {
+    "Nome": "Torta Alle Castagne (2)",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Castagne",
+    "Persone": "6",
+    "Note": "-",
+    "Ingredienti": "2 = Uova\r\n100 G = Zucchero\r\n100 G = Farina\r\n100 G = Burro\r\n200 G = Marmellata Di Castagne\r\n1 Cucchiaio = Lievito Di Birra\r\n1 Pizzico = Sale",
+    "Preparazione": "In un recipiente battete le uova con lo zucchero e il sale. Lavorate il burro in modo da renderlo cremoso e aggiungetelo alla marmellata di castagne. Imburrate uno stampo di circa 30 cm., versate l'impasto e cuocete a forno medio (160 gradi) fino a che la torta prenda un bel colore dorato. Da gustare fredda."
+  },
+  {
+    "Nome": "Torta Alle Mandorle",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Mandorle Sbucciate",
+    "Persone": "6",
+    "Note": "-",
+    "Ingredienti": "200 G = Farina\r\n200 G = Burro\r\nPer La Pasta Di Mandorle:\r\n50 G = Mandorle Sbucciate\r\n50 G = Burro\r\n50 G = Zucchero A Velo\r\n3 = Uova\r\n2 Cucchiai = Rum",
+    "Preparazione": "Preparate la pasta sfoglia. Preparate la pasta di mandorle tritando finemente le mandorle e mescolandole con un uovo. Quando il miscuglio sara omogeneo, mettete lo zucchero a velo, il burro, le altre uova e il rum. Imburrate una tortiera metteteci dentro la meta della pasta sfoglia e guarnite con la pasta di mandorle. Con il resto della pasta sfoglia coprite la torta. Infornate per 30 minuti e quando la torta sara dorata e gonfia toglietela dal forno."
+  },
+  {
+    "Nome": "Torta Alle Mele",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Mele",
+    "Persone": "4",
+    "Note": "-",
+    "Ingredienti": "1000 G = Mele\r\n200 G = Farina\r\n150 G = Zucchero\r\n2 = Uova Intere\r\n20 G = Lievito Vanigliato\r\n1 = Limone (scorza)\r\nLatte",
+    "Preparazione": "Sbattere le uova con lo zucchero, unite la farina, la scorza di limone e qualche cucchiaio di latte in modo da ottenere una pasta morbida. Aggiungere infine il lievito sciolto nel latte. Ungere col burro una teglia larga e spolverarla di pangrattato. Versate la pasta e coprite con le mele sbucciate e tagliate a fettine non troppo sottili. Spargere sulla superficie qualche cucchiaio di zucchero e qualche pezzetto di burro; cuocete a fuoco moderato (in forno a 175 gradi per 40 minuti dopo averlo scaldato a 200 gradi-250 gradi)."
+  },
+  {
+    "Nome": "Torta Alle More",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "More",
+    "Persone": "6",
+    "Note": "-",
+    "Ingredienti": "200 G = Farina\r\n100 G = Burro\r\n150 G = Zucchero\r\n2 = Tuorli D'uovo\r\n1 Pizzico = Sale\r\n1 = Mela\r\nMore",
+    "Preparazione": "Formate un vulcano con la farina e nel centro metteteci lo zucchero, il burro tagliato a pezzi, i tuorli d'uovo, il sale. Amalgamate tutti gli ingredienti e formate una palla, lasciandola riposare per 30 minuti. Mettete le more in una terrina con 2 cucchiai di zucchero. Sbucciate e affettate la mela. Imburrate una tortiera e metteteci dentro la pasta facendola aderire bene al fondo e ai lati. Sul fondo mettete le fettine di mele disposte a stella, infornate per 20 minuti. Quando la torta sara dorata toglietela dal forno e lasciatela raffreddare; riempitela con le more, che avrete precedentemente macerato con lo zucchero. Al momento di servire cospargete la torta con lo zucchero."
+  },
+  {
+    "Nome": "Torta Alle Nocciole",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Nocciole",
+    "Persone": "16",
+    "Note": "-",
+    "Ingredienti": "10 = Albumi D'uovo\r\n400 G = Zucchero A Velo\r\n250 G = Nocciole Tritate Finemente\r\n150 G = Farina\r\n1 Pizzico = Cannella\r\n1 Stecca = Vaniglia\r\n200 G = Confettura Di Lamponi\r\n50 G = Glassa Al Cioccolato\r\n80 G = Noci O Mandorle Tostate E Tritate\r\nPer La Crema:\r\n100 G = Burro\r\n140 G = Meringa Italiana\r\n50 G = Crema Gianduia\r\n1 Cl = Cognac",
+    "Preparazione": "In una terrina montate a neve gli albumi, aggiungendo un po' alla volta lo zucchero a velo. Unite le nocciole, la farina setacciata, la cannella e l'interno di una stecca di vaniglia, incorporando tutti gli ingredienti con delicatezza per non smontare il composto. Disegnate tre dischi (diametro 26 cm) su altrettanti fogli di carta da forno e riempitene due con il composto alle nocciole fatto uscire da una tasca di tela con bocchetta a stella n. 8, cercando di formare una spirale. Per il terzo disco, che andra a coprire il dolce, formate un cordone di composto lungo il bordo e, all'interno, un intreccio a paniere. Fate cuocere tutti i dischi in forno a 200 gradi per 15 minuti. Lavorate a crema il burro in una terrina, servendovi di un cucchiaio di legno, poi incorporatevi, poca alla volta, la meringa italiana fredda. Infine unite la crema gianduia gia mescolata al Cognac e lavorate il composto fino a quando tutti gli ingredienti saranno ben amalgamati. Passate al setaccio la confettura di lamponi, raccoglietela in una casseruolina e fatela scaldare, quindi spalmatela con un pennello sul disco di copertura, formando uno strato sottile; quando la confettura e fredda, copritela con uno strato di glassa al cioccolato e cospargete quest'ultima con le noci o le mandorle tritate. Spalmate sul primo disco, che formera la base del dolce, la marmellata rimasta, coprite con il secondo disco e spalmatelo con la crema al burro. Coprite con il terzo disco, gia guarnito, e spalmate la crema al burro anche sui bordi. Rivestite tutta la torta con le noci o le mandorle tritate."
+  },
+  {
+    "Nome": "Insalata Con Caciotta (2)",
+    "Tipo_Piatto": "Contorno",
+    "Ing_Principale": "Formaggio Caciotta",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "1 = Formaggio Caciotta\r\n3 = Zucchine Tenere\r\n1 = Pomodoro Da Insalata\r\nOlio D'oliva\r\nSucco Di Limone\r\nSale\r\nPepe\r\nSenape\r\nAlcune Foglie = Menta",
+    "Preparazione": "Lavate molto bene le zucchine, tagliatele a fettine sottilissime e ponetele a bagno in acqua fredda per circa mezz'ora. Nel frattempo tagliate a fette il pomodoro e a bastoncini sottili la caciottina. In un'insalatiera miscelate l'olio con un cucchiaio di senape, sale e pepe, quindi unitevi le verdure e il formaggio, mescolando delicatamente. Aggiungete un po' di succo di limone e decorate con qualche fogliolina di menta."
+  },
+  {
+    "Nome": "Insalatona Deliziosa",
+    "Tipo_Piatto": "Contorno",
+    "Ing_Principale": "Cavolo Cappuccio",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "150 G = Foglioline Di Spinaci Novelli (tenerissime)\r\n100 G = Germogli Di Grano\r\n100 G = Germogli Di Soia\r\n100 G = Cavolo Cappuccio\r\n1 = Carota\r\n1 = Peperone\r\n1 Ciuffetto = Prezzemolo\r\n1 Cucchiaio = Aceto Aromatico\r\nAlcuni Cucchiai = Olio D'oliva\r\n1 Presa = Sale\r\n1 Macinata = Pepe",
+    "Preparazione": "Lavate a lungo sotto l'acqua corrente tutte le verdure (dopo aver raschiato la carota); poi asciugatele con carta assorbente da cucina. Riducete cavolo e peperone a strisciolini sottili con l'apposito utensile e grattugiate la carota. Mettete gli ingredienti preparati in una insalatiera e unitevi le foglie di spinaci intere e i germogli di soia e di grano. Preparate quindi un'emulsione con qualche cucchiaio di olio, l'aceto, il prezzemolo tritato, una presa di sale e una macinata di pepe. Versate la salsa preparata sull'insalata, mescolate delicatamente e portate subito in tavola."
+  },
+  {
+    "Nome": "Involtini Rustici",
+    "Tipo_Piatto": "Carne",
+    "Ing_Principale": "Vitello",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "8 Fettine = Fesa Di Vitello\r\n50 G = Olive Verdi Snocciolate\r\n4 = Acciughe\r\n1 Cucchiaio = Capperi\r\n2 Cucchiai = Formaggio Pecorino Grattugiato\r\n1 = Uovo\r\n1 = Peperone Rosso\r\n1 = Peperone Verde\r\n1 = Cipolla\r\n30 Cl = Passato Di Pomodoro\r\nPrezzemolo Tritato\r\nOlio D'oliva\r\nSale\r\nPepe",
+    "Preparazione": "Tritate le olive con i capperi e le acciughe. Riunite il tutto in una ciotola e aggiungetevi l'uovo sbattuto e il pecorino. Appiattite la carne, spennellatela d'olio e suddividete il ripieno sulle 8 fette. Arrotolatele legandole con refe da cucina. Mondate i peperoni e tagliateli a listarelle. Fate appassire la cipolla tritata in una padella con 4 cucchiai di olio; unite i peperoni, rosolateli, salate, pepate, coprite e cuocete per 10 minuti. Unite alla salsa gli involtini, lasciateli insaporire e versate 30 cl di passato di pomodoro e un mestolo d'acqua. Cuocete a fuoco basso per 30 minuti, cospargete di prezzemolo e servite."
+  },
+  {
+    "Nome": "Involtini Di Vitello",
+    "Tipo_Piatto": "Carne",
+    "Ing_Principale": "Vitello",
+    "Persone": "6",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "12 Fettine = Vitello\r\n60 G = Carne Di Maiale Magra\r\n60 G = Prosciutto Crudo\r\n100 G = Burro\r\n80 G = Formaggio Parmigiano Reggiano Grattugiato\r\nAlcuni Cucchiai = Vino Bianco Secco\r\n1 = Panino (mollica Bagnata Nel Latte)\r\n1 = Uovo\r\nSale\r\nPepe",
+    "Preparazione": "Battete le fettine di vitello. Tritate la carne di maiale, il prosciutto, la mollica di pane strizzata, amalgamarvi l'uovo, il parmigiano, sale e pepe. Allineare le fettine e sistemare al centro di ognuna un poco del composto ottenuto, arrotolarle e fermarle con uno stecchino. Rosolare gli involtini nel burro rivoltandoli spesso e irrorandoli con qualche cucchiaio di vino bianco secco. Lasciarli cuocere lentamente per circa 20 minuti."
+  },
+  {
+    "Nome": "Involtini Di Vitello Con I Capperi",
+    "Tipo_Piatto": "Carne",
+    "Ing_Principale": "Vitello",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "300 G = Fettine Di Vitello Tagliate Molto Sottili\r\n1 Cucchiaio = Capperi Sotto Sale\r\n1 Cucchiaio = Prezzemolo Tritato\r\n5 Cucchiai = Olio D'oliva\r\n2 Cucchiai = Succo Di Limone\r\n1 Macinata = Pepe\r\nPoco = Sale",
+    "Preparazione": "Sciacquate i capperi in acqua corrente, strizzateli e tritateli. Mettete in una ciotola poco sale, una macinata di pepe, il succo di limone e mescolate; unite a filo l'olio battendo con una forchetta e incorporatevi i capperi con il prezzemolo. Tagliate un ampio foglio di carta da forno a rettangoli di 15 per 20 cm; mettete al centro di ciascuno una fettina di carne e conditela con parte della salsa. Arrotolate le fettine di carne senza stringere, avvolgetele con la carta da forno, chiudendo le estremita per dare ai cartocci la forma di caramella. Disponete i singoli pezzi sopra una piastra estratta al momento dal forno caldo, infornateli a 200 gradi per circa 8 minuti, quindi servite in tavola."
+  },
+  {
+    "Nome": "La Bruschetta",
+    "Tipo_Piatto": "Antipasto",
+    "Ing_Principale": "Pane Scuro Raffermo",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "Alcune Fette = Pane Scuro Raffermo\r\nAglio\r\nOlio D'oliva Extra-vergine\r\nSale",
+    "Preparazione": "Abbrustolire il pane, agliarlo con cura, adagiarlo su un vassoio (rustico), versarci un filo d'olio, salare leggermente e servirle ben calde."
+  },
+  {
+    "Nome": "Lasagne Alla Mozzarella",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Mozzarella",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "300 G = Pasta Tipo Lasagne Secche\r\n1 = Mozzarella Grande\r\n150 G = Ricotta\r\n400 G = Pomodori Pelati\r\n1/2 = Cipolla\r\n1 = Carota\r\n1 Gambo = Sedano\r\n1 = Uovo\r\n50 G = Burro\r\n2 Cucchiai = Formaggio Grana Grattugiato\r\n3 Cucchiai = Olio D'oliva\r\nSale\r\nPepe",
+    "Preparazione": "Questo primo sara più leggero con le melanzane sbollentate al posto dei formaggi. Pulite, lavate e tritate cipolla, sedano e carota. Soffriggeteli in una pentola coperta con meta burro e l'olio. Unite i pelati, salate, pepate e fate cuocere a fuoco lento, mescolando spesso, fino a quando la salsa non sara densa. Tagliate la mozzarella a dadini e sminuzzate la ricolla. Cuocete le lasagne in abbondante acqua salata, scolatele, asciugatele e appoggiatele su un canovaccio. Accendete il forno a 170 gradi. Imburrate una pirofila, mettete sul fondo qualche cucchiaiata di salsa e disponete le lasagne a strati alternati con mozzarella, ricotta e salsa di pomodoro. Continuate fino a esaurimento degli ingredienti, terminando con uno strato di mozzarella e pomodoro Aggiungere il grana e fate gratinare in forno per 20 minuti."
+  },
+  {
+    "Nome": "Maccheroni Gratinati (5)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Mozzarella",
+    "Persone": "6",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "400 G = Pasta Tipo Maccheroni\r\n100 G = Formaggio Parmigiano Grattugiato\r\n100 G = Burro\r\n150 G = Mortadella Tagliata A Cubetti\r\n50 Cl = Besciamella",
+    "Preparazione": "Scolate i maccheroni cotti al dente e conditeli con la besciamella appena riscaldata in padella, aggiungere il burro, meta del parmigiano e la mortadella. Ungere una pirofila, mettervi i maccheroni, spolverizzarli con il formaggio rimasto e con qualche fiocchetto di burro poi passate al forno per gratinare."
+  },
+  {
+    "Nome": "Maccheroni Alla Cavalleggera",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Tuorli D'uovo",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "400 G = Pasta Tipo Maccheroni\r\n2 = Tuorli D'uovo\r\n20 G = Burro\r\nFormaggio Parmigiano\r\nAlcuni = Gherigli Di Noci Tritati Fini",
+    "Preparazione": "Scolate i maccheroni in una zuppiera dove avete lavorato i tuorli con il burro, il parmigiano e il trito abbondante di gherigli di noci. Servire ben caldi."
+  },
+  {
+    "Nome": "Macedonia Colorata (2)",
+    "Tipo_Piatto": "Dessert",
+    "Ing_Principale": "Kiwi",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "4 = Kiwi\r\n2 = Mele\r\n4 Fette = Ananas Sciroppato\r\n1 = Banana\r\n1 Cestino = Fragole\r\n50 G = Mango Disidratato\r\n50 G = Scorza D'arancia Candita\r\n2 Bicchieri = Vino Marsala All'uovo\r\n40 G = Zucchero",
+    "Preparazione": "Tagliate il mango e la scorza d'arancia a dadini e metteteli in una ciotola per 15 minuti con il marsala. Sbucciate le mele, il kiwi e la banana e tagliate le mele a pezzetti, il kiwi a ventaglietti e la banana a rondelle. Lavate le fragole, sgocciolatele, togliete il picciolo e asciugatele. Sgocciolate anche l'ananas dal suo liquido di conservazione e tagliate le fette a spicchietti. Mettete tutta la frutta in una coppa trasparente, spolverizzatela con lo zucchero e mescolate delicatamente. Aggiungete il marsala con la frutta messa a macerare, mescolate ancora, coprite con pellicola trasparente e mettete in frigo fino al momento di servire."
+  },
+  {
+    "Nome": "Medaglioni Di Patate",
+    "Tipo_Piatto": "Contorno",
+    "Ing_Principale": "Patate",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "4 = Patate Grandi\r\nAlcune Fettine = Prosciutto Crudo\r\nAlcune Fettine = Formaggio Fontina\r\nOlio D'oliva\r\nBurro\r\nAlcune Foglie = Salvia",
+    "Preparazione": "Prendete le patate sbucciatele e tagliatele a fette piuttosto spesse. Su ogni fetta disponete una fettina di prosciutto e una fettina sottile di formaggio. Sovrapponete un'altra fetta di patata e legate in croce ogni medaglione con del filo sottile in modo che il ripieno non esca cuocendo. Mettete le patate cosi preparate con olio e burro e qualche foglietta di salvia in una teglia, lasciando cuocere piano e rivoltandole fino a che siano ben colorite dalle due parti."
+  },
+  {
+    "Nome": "Melanzane Al Forno Con Pomodoro E Pecorino",
+    "Tipo_Piatto": "Contorno",
+    "Ing_Principale": "Melanzane Lunghe",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "1000 G = Melanzane Lunghe\r\n300 G = Pomodori\r\n200 G = Formaggio Pecorino Romano\r\nOlio D'oliva\r\nSale\r\nAglio\r\nPeperoncino",
+    "Preparazione": "Tagliare le melanzane a fette di 1 cm circa e lessarle. Disporle su una teglia e aggiungere olio, sale, aglio a fettine, peperoncino e pomodoro fresco. Infornarle e quasi a fine cottura, ricoprirle di pecorino romano gatttugiato che formera una leggera crosticina. Togliere dal forno, tagliare a dadini regolari e guarnire con scagliette dottili di pecorino."
+  },
+  {
+    "Nome": "Merluzzo Gustoso",
+    "Tipo_Piatto": "Pesce",
+    "Ing_Principale": "Merluzzo",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "600 G = Merluzzo Ammollato\r\n500 G = Patate\r\n1 Ciuffo = Prezzemolo\r\n2 Spicchi = Aglio\r\n80 G = Burro (o Margarina)\r\n30 G = Farina\r\n1 Dito = Latte\r\nSale\r\nPepe Appena Macinato",
+    "Preparazione": "Fate lessare in acqua bollente le patate per 30 minuti circa, quindi sgocciolatele, pelatele e tagliatele a fettine sottili. Sfaldate il merluzzo e tritate finemente il prezzemolo e l'aglio. In una pirofila da forno unta disponete degli strati di patate affettate e di merluzzo alternandoli e condendo ogni strato con un poco di trito, sale, pepe appena macinato e fiocchetti di burro. Passate tutto in forno per 20 minuti circa. Nel frattempo preparate la besciamella: in un pentolino sciogliete 30 g di burro, unite la farina, un pizzico di sale; diluite tutto con il latte e portate a ebollizione senza mai smettere di girare. Versate la salsa besciamella sopra il merluzzo e rimettete in forno per altri 15 minuti circa o finche si sara formata sulla superficie della preparazione una crosticina dorata."
+  },
+  {
+    "Nome": "Minestra Della Zia Marianna",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Sugo Di Pomodoro",
+    "Persone": "6",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti":"Cipolla\r\nCarota\r\nSedano\r\n100 G = Lardo\r\n300 G = Sugo Di Pomodoro Fresco\r\nRiso\r\n1 Manciata = Prezzemolo",
+    "Preparazione": "Fare un battuto con cipolla, carota, sedano, 100 G di lardo. Mettete a colorire tutto in teglia e bagnate con 300 G di sugo di pomodoro fresco. Bollitura: 10 minuti. Aggiungete poi acqua e, dopo altri 10 minuti di cottura, il riso; quando saranno cotti, aggiungete 1 manciata di prezzemolo tagliato fine fine."
+  },
+  {
+    "Nome": "Minestra Della Zia Marianna (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Sugo Di Pomodoro",
+    "Persone": "6",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti":"Cipolla\r\nCarota\r\nSedano\r\n100 G = Lardo\r\n300 G = Sugo Di Pomodoro Fresco\r\nPasta Tipo Qualsiasi\r\n1 Manciata = Cerfoglio",
+    "Preparazione": "Fare un battuto con cipolla, carota, sedano, 100 G di lardo. Mettete a colorire tutto in teglia e bagnate con 300 G di sugo di pomodoro fresco. Bollitura: 10 minuti. Aggiungete poi acqua e, dopo altri 10 minuti di cottura, la pasta; quando saranno cotti, aggiungete 1 manciata di cerfoglio tagliato fine fine."
+  },
+  {
+    "Nome": "Minestra Di Verdure Passate",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Verdure",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti":"Burro\r\nFormaggio Parmigiano Grattugiato\r\nVerdure",
+    "Preparazione": "Tutte le verdure vanno bene per questa minestra. Che non manchi un porro e una manciatina di spinaci. Quando tutto e cotto, passate nel passaverdure o al setaccio, rimettete in un'altra casseruola con un bel pezzo di burro e servite con parmigiano grattato. ricordate che ci vogliono molte, moltissime verdure dato che la minestra deve apparire come una crema piuttosto densa."
+  },
+  {
+    "Nome": "Minestrone Semplice (2)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Fagioli Borlotti",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "300 G = Fagioli Borlotti Lessati\r\n200 G = Cavolo Nero\r\n1 = Zucchina\r\n1 = Cipolla\r\n1 = Carota\r\n1 Cuore = Sedano\r\n100 G = Polpa Di Pomodoro\r\nFormaggio Grana\r\n2 = Dadi\r\nOlio D'oliva\r\nSale\r\nPepe",
+    "Preparazione": "Tritate la cipolla sbucciata, la carota raschiata e lavata, il sedano mondato e lavato. Raccogliete il trito in una pentola, aggiungete 3 cucchiai di olio e fatelo soffriggere. Aggiungete la polpa di pomodoro, lasciatela insaporire e unite 2 litri di acqua Appena avra raggiunto l'ebollizione aggiungete le foglie di cavolo mondate, lavate e tagliate a listarelle, la zucchina lavata e tagliata a dadini, i fagioli meta passati al mixer e meta interi e i dadi. Coprite e cuocete per 50 minuti. A fine cottura salate, pepate, condite con olio e grana."
+  },
+  {
+    "Nome": "Minestrone Semplice (3)",
+    "Tipo_Piatto": "Primo",
+    "Ing_Principale": "Fagioli Borlotti",
+    "Persone": "4",
+    "Note": "Luogo: Lazio.",
+    "Ingredienti": "300 G = Fagioli Borlotti Lessati\r\n200 G = Spinaci\r\n1 = Zucchina\r\n1 = Cipolla\r\n1 = Carota\r\n1 Cuore = Sedano\r\n100 G = Polpa Di Pomodoro\r\nFormaggio Grana\r\n2 = Dadi\r\nOlio D'oliva\r\nSale\r\nPepe",
+    "Preparazione": "Tritate la cipolla sbucciata, la carota raschiata e lavata, il sedano mondato e lavato. Raccogliete il trito in una pentola, aggiungete 3 cucchiai di olio e fatelo soffriggere. Aggiungete la polpa di pomodoro, lasciatela insaporire e unite 2 litri di acqua Appena avra raggiunto l'ebollizione aggiungete le foglie di spinaci mondate, lavate e tagliate a listarelle, la zucchina lavata e tagliata a dadini, i fagioli meta passati al mixer e meta interi e i dadi. Coprite e cuocete per 50 minuti. A fine cottura salate, pepate, condite con olio e grana."
+  }
+]

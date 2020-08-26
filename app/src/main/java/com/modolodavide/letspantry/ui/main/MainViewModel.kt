@@ -10,6 +10,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     private val db = IngredienteRepository(app)
     var ingredienteList = MutableLiveData<List<Ingrediente>>()
     init{
+        db.getAll()
         ingredienteList=db.ingredienteData
     }
 

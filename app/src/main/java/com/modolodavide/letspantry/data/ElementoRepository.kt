@@ -13,12 +13,12 @@ class ElementoRepository(app: Application) {
     init {
         CoroutineScope(Dispatchers.IO).launch {
             //elementoDAO.deleteAll()
-            var data: List<Elemento>? = elementoDAO.getAll()
+            val data: List<Elemento>? = elementoDAO.getAll()
             if (data.isNullOrEmpty()) {
-                for(i in 1..4)
+                /*for(i in 1..4)
                     elementoDAO.insertElemento(randomElemento())
                 data = elementoDAO.getAll()
-                elementoData.postValue(data)
+                elementoData.postValue(data)*/
             } else {
                 elementoData.postValue(data)
             }

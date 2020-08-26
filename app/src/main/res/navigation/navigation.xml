@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.modolodavide.letspantry.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/ricetteFragment"
+        android:name="com.modolodavide.letspantry.ui.main.RicetteFragment"
+        android:label="RicetteFragment" />
+    <fragment
+        android:id="@+id/listaSpesaFragment"
+        android:name="com.modolodavide.letspantry.ui.main.ListaSpesaFragment"
+        android:label="ListaSpesaFragment" />
+    <fragment
+        android:id="@+id/creditsFragment"
+        android:name="com.modolodavide.letspantry.CreditsFragment"
+        android:label="credits_fragment"
+        tools:layout="@layout/credits_fragment" />
+</navigation>

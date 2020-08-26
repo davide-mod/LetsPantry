@@ -2,32 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/rettangolo_back_green"
     android:layout_marginBottom="4dp"
-    android:id="@+id/elementoView"
+    android:background="@drawable/rettangolo_back_white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="@dimen/dimMargin"
-        android:padding="@dimen/dimMarginBig"
-        android:text="X"
-        android:id="@+id/listCheck"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/listQuantita"
-        app:layout_constraintLeft_toRightOf="@id/listCheck"
-        android:layout_margin="@dimen/dimMargin"
         android:textSize="@dimen/dimText"
-        android:hint="INGREDIENTE"
-        android:id="@+id/listItem"
+        android:textColor="@color/colorText1"
+        android:gravity="start"
+        app:layout_constraintRight_toLeftOf="@id/tipoPiatto"
+        android:text="Nome Ricetta"
+        android:id="@+id/nomeRicetta"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -36,10 +26,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_margin="@dimen/dimMargin"
-        android:textSize="@dimen/dimText"
-        android:id="@+id/listQuantita"
-        android:hint="20.0"
+        android:textColor="@color/colorText1"
+        android:text="Primo Piatto"
+        android:textSize="@dimen/dimTextLittle"
+        android:id="@+id/tipoPiatto"
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

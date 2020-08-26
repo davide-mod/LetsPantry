@@ -13,15 +13,21 @@ class IngredienteRepository(app: Application) {
     init {
         CoroutineScope(Dispatchers.IO).launch {
             //ingredienteDAO.deleteAll()
-            var data: List<Ingrediente>? = ingredienteDAO.getAll()
+            val data: List<Ingrediente>? = ingredienteDAO.getAll()
             if (data.isNullOrEmpty()) {
-                for(i in 1..3)
+                /*for(i in 1..3)
                     ingredienteDAO.insertIngrediente(randomIngrediente())
                 data = ingredienteDAO.getAll()
-                ingredienteData.postValue(data)
+                ingredienteData.postValue(data)*/
             } else {
                 ingredienteData.postValue(data)
             }
+        }
+    }
+
+    fun getAll(){
+        CoroutineScope(Dispatchers.IO).launch {
+            ingredienteData.postValue(ingredienteDAO.getAll())
         }
     }
 

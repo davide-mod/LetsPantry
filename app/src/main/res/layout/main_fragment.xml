@@ -20,14 +20,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textToList"
+    <ImageView
+        android:contentDescription="@string/add"
+        android:id="@+id/btnMenuLaterale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimMargin"
-        android:text="Lista"
-        android:textColor="@color/colorReddo"
-        android:textSize="@dimen/dimTextLittle"
+        android:src="@drawable/ic_baseline_menu_24"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/ricerca"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,10 +35,10 @@
         android:id="@+id/ricerca"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/dimMargin"
+        android:layout_marginEnd="@dimen/dimMargin"
         android:textSize="@dimen/dimTextLittle"
         android:hint="cerca"
-        app:layout_constraintLeft_toRightOf="@id/textToList"
+        app:layout_constraintLeft_toRightOf="@id/btnMenuLaterale"
         app:layout_constraintRight_toLeftOf="@id/txtCalendario"
         app:layout_constraintTop_toTopOf="parent" />
 

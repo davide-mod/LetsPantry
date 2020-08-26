@@ -5,6 +5,7 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#B2FF59</color>
     <color name="colorText1">#212121</color>
+    <color name="listaTook">#BEBEBE</color>
     <color name="colorBackgroundGrey">#F1F1F1</color>
     <color name="colorText2">#FFFFFF</color>
 </resources>

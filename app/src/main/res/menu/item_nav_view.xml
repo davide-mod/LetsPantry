@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemDispensa"
+        android:title="Dispensa"
+        />
+    <item
+        android:id="@+id/itemListaSpesa"
+        android:title="Lista della Spesa"
+        />
+    <item
+        android:id="@+id/itemRicette"
+        android:title="Ricette"
+        />
+    <item
+        android:id="@+id/itemSupermercati"
+        android:title="Supermercati vicini"
+        />
+    <item
+        android:id="@+id/itemCredits"
+        android:title="Credits"
+        />
+</menu>
