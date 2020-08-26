@@ -9,7 +9,6 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
-import kotlinx.android.synthetic.main.main_activity_lato.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var drawer: DrawerLayout

@@ -1,6 +1,5 @@
 package com.modolodavide.letspantry.ui.main
 
-import android.app.DatePickerDialog
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,31 +7,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.core.content.ContentProviderCompat
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.data.Elemento
-import com.modolodavide.letspantry.data.Ingrediente
 
 class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
-
-    companion object {
-        fun newInstance() = ListaSpesaFragment()
-    }
 
     private lateinit var elemVM: ElementoViewModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        elemVM = ViewModelProvider(this).get(ElementoViewModel::class.java)
         val view = inflater.inflate(R.layout.listaspesa_fragment, container, false)
+
+        //istanzio la viewmodel per poter comunicare facilmente col database della Lista della spesa
+        elemVM = ViewModelProvider(this).get(ElementoViewModel::class.java)
         val listaElementi = view.findViewById<RecyclerView>(R.id.viewListaSpesa)
+        //scorro la lista ricevuta dal database in modo da ordinare gli elementi presi e non e renderli di conseguenza differenti
         elemVM.elementoList.observe(viewLifecycleOwner, {
             val presi = mutableListOf<Elemento>()
             val nonpresi = mutableListOf<Elemento>()
@@ -42,10 +36,12 @@ class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
                 else
                     nonpresi.add(elemento)
             }
-            //https://stackoverflow.com/questions/53076904/android-kotlin-recyclerview-find-out-what-exactly-inside-item-was-clicked-in-a
+            //lista orfidata che tiene gli elementi in ordine alfabetico e poi li ordina come non presi e poi presi
             val adapter = ElementoAdapter(requireContext(), nonpresi+presi, this)
             listaElementi.adapter = adapter
         })
+
+        //bottone per un nuovo elemento per la lista della spesa
         val btnNuovo: TextView = view.findViewById(R.id.btnAggiungi)
         btnNuovo.setOnClickListener {
             val dialog = Dialog(requireContext())
@@ -82,10 +78,10 @@ class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
     }
 
     override fun onElementoListener(elemento: Elemento, position: Int, longpress: Boolean) {
-        if(!longpress){
-            elemVM.prendiElemento(elemento)
+        if(!longpress){ //controllo il tipo di pressione avvenuta sull'elemento singolo
+            elemVM.prendiElemento(elemento) //se singolo "tap" cambio solamente lo stato
         }
-        else{
+        else{//se pressione prolungata permetto la modifica
             val dialog = Dialog(requireContext())
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
             dialog.setCancelable(true)
@@ -111,6 +107,7 @@ class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
                 )
                 dialog.dismiss()
             }
+            //l'utente può anche eliminare totalmente un elemento
             elimina.setOnClickListener {
                 elemVM.deleteElemento(elemento)
                 dialog.dismiss()

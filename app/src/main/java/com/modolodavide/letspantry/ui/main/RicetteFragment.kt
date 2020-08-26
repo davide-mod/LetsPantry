@@ -3,7 +3,6 @@ package com.modolodavide.letspantry.ui.main
 import android.app.Dialog
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,18 +17,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.FileHelper
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.Ricetta
-import com.squareup.moshi.JsonAdapter
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.Types
+import com.squareup.moshi.*
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import java.util.*
 
 
 class RicetteFragment : Fragment(), RicettaAdapter.RicettaListener {
-
-    companion object {
-        fun newInstance() = RicetteFragment()
-    }
     val listTypeRicetta = Types.newParameterizedType(
         List::class.java, Ricetta::class.java
     )
@@ -40,62 +33,61 @@ class RicetteFragment : Fragment(), RicettaAdapter.RicettaListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view =  inflater.inflate(R.layout.ricette_fragment, container, false)
+        val view = inflater.inflate(R.layout.ricette_fragment, container, false)
+
+        //leggo il json delle ricette
         val text = FileHelper.getData(requireContext(), "ricette.json")
         val moshi = Moshi.Builder()
             .add(KotlinJsonAdapterFactory())
             .build()
         val adapter: JsonAdapter<List<Ricetta>> = moshi.adapter(listTypeRicetta)
         var ricette: List<Ricetta>? = adapter.fromJson(text)
+        //ordino la lista
         ricette = ricette?.sortedByDescending { it.Tipo_Piatto }
         var all = false
-        val adapterR = RicettaAdapter(requireContext(), ricette!!, this)
+        val adapterR = RicettaAdapter(ricette!!, this)
         listaRicette = view.findViewById(R.id.listaRicette)
         listaRicette.adapter = adapterR
+        //recupero gli ingredienti che ho in dispensa
         val mainVM = ViewModelProvider(this).get(MainViewModel::class.java)
         val btnFiltra = view.findViewById<TextView>(R.id.btnFiltra)
         btnFiltra.setOnClickListener {
-            all=!all
-            if(all) {
+            all = !all//attivo o disattivo il filtro
+            if (all) {
                 val ricetteSorted = mutableListOf<Ricetta>()
                 ricette.forEach { ricetta ->
                     mainVM.ingredienteList.value?.forEachIndexed { _, it ->
-                        //if (ricetta.Ing_Principale.toUpperCase(Locale.ROOT) == it.nome.toUpperCase(
-                                //Locale.ROOT
-                            //))
-                        if(similarity(ricetta.Ing_Principale.toUpperCase(Locale.ROOT), it.nome.toUpperCase(
-                                Locale.ROOT
-                            )
-                            ) >= 0.5
+                        //filtro se l'ingrediente principale è apiù del 50% simile ad un ingrediente in dispensa lo teniamo
+                        if (similarity(
+                                ricetta.Ing_Principale.toUpperCase(Locale.ROOT),
+                                it.nome.toUpperCase(
+                                    Locale.ROOT
+                                )
+                            ) > 0.5
                         ) {
                             ricetteSorted.add(ricetta)
                             return@forEachIndexed
                         }
                     }
                 }
-                val adapterR2 = RicettaAdapter(requireContext(), ricetteSorted, this)
+                val adapterR2 = RicettaAdapter(ricetteSorted, this)
                 listaRicette.adapter = adapterR2
-            }
-            else
-            {
-                val adapterR3 = RicettaAdapter(requireContext(), ricette, this)
+            } else {//se disattivo il filtro rimetto la lista totale
+                val adapterR3 = RicettaAdapter(ricette, this)
                 listaRicette.adapter = adapterR3
             }
 
         }
 
+        //spinner per mostrare solo un determinato tipo di ricette
         val spinner = view.findViewById<Spinner>(R.id.spinnerRicette)
         spinner.onItemSelectedListener = object : OnItemSelectedListener {
             override fun onItemSelected(adapterView: AdapterView<*>?, view: View, i: Int, l: Long) {
-                if(spinner.selectedItem.toString().toUpperCase(Locale.ROOT) == "TUTTI")
+                if (spinner.selectedItem.toString().toUpperCase(Locale.ROOT) == "TUTTI")
                     updateRicette(ricette)
                 else {
                     val ricetteSorted = mutableListOf<Ricetta>()
                     ricette.forEach { ricetta ->
-                        Log.i("debug",
-                            ricetta.Tipo_Piatto.toUpperCase(Locale.ROOT) + " == " + spinner.selectedItem.toString()
-                                .toUpperCase(Locale.ROOT)
-                        )
                         if (ricetta.Tipo_Piatto.toUpperCase(Locale.ROOT) == spinner.selectedItem.toString()
                                 .toUpperCase(Locale.ROOT)
                         )
@@ -110,20 +102,20 @@ class RicetteFragment : Fragment(), RicettaAdapter.RicettaListener {
             }
         }
 
-
         return view
     }
+
     private fun updateRicette(ricetteSorted: List<Ricetta>) {
-        val adapterR = RicettaAdapter(requireContext(), ricetteSorted, this)
+        val adapterR = RicettaAdapter(ricetteSorted, this)
         listaRicette.adapter = adapterR
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(RicetteViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
+    //se si clicca su una ricetta appare il dialog con i dettagli
     override fun onRicettaListener(ricetta: Ricetta, position: Int) {
         val dialog = Dialog(requireContext())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -136,14 +128,15 @@ class RicetteFragment : Fragment(), RicettaAdapter.RicettaListener {
         val procedimento = dialog.findViewById<TextView>(R.id.procedimento)
         listaIngredienti.movementMethod = ScrollingMovementMethod()
         procedimento.movementMethod = ScrollingMovementMethod()
-        nomeRicetta.text=ricetta.Nome
-        ingredientePrincipale.text="Principale: "+ricetta.Ing_Principale
-        numeroPersone.text = "per " + ricetta.Persone+" persone"
-        listaIngredienti.text="Ingredienti:\n"+ricetta.Ingredienti
-        procedimento.text = "Procedimento:\n"+ricetta.Preparazione
+        nomeRicetta.text = ricetta.Nome
+        ingredientePrincipale.text = "Principale: " + ricetta.Ing_Principale
+        numeroPersone.text = "per " + ricetta.Persone + " persone"
+        listaIngredienti.text = "Ingredienti:\n" + ricetta.Ingredienti
+        procedimento.text = "Procedimento:\n" + ricetta.Preparazione
         dialog.show()
     }
 
+    //funzioni per la similarità da https://stackoverflow.com/questions/955110/similarity-string-comparison-in-java
     private fun similarity(s1: String, s2: String): Double {
         var longer = s1
         var shorter = s2

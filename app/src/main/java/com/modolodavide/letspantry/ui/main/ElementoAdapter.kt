@@ -1,30 +1,20 @@
 package com.modolodavide.letspantry.ui.main
 
-import android.app.DatePickerDialog
-import android.app.Dialog
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
-import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.content.ContextCompat.getDrawable
 import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.data.Elemento
-import com.modolodavide.letspantry.data.Ingrediente
-import java.util.*
 
 class ElementoAdapter(private val context: Context, val listaElementi: List<Elemento>, val elementoListener: ElementoListener) :
     RecyclerView.Adapter<ElementoAdapter.ViewHolder>() {
-
+    //recupero i vari elementi del singolo item Elemento
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val testo: TextView = itemView.findViewById(R.id.listItem)
         val quantita: TextView = itemView.findViewById(R.id.listQuantita)
@@ -43,8 +33,10 @@ class ElementoAdapter(private val context: Context, val listaElementi: List<Elem
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val elemento = listaElementi[position]
         with(holder) {
+            //imposto i vari campi
             testo.text = elemento.testo
             quantita.text = elemento.quantita.toString()
+            //in base alla situazione dell'elemento, l'aspetto sarà differente
             if(elemento.preso) {
                 listCheck.text = "X"
                 elementoView.background = getDrawable(context, R.drawable.rettangolo_back_black)
@@ -59,6 +51,7 @@ class ElementoAdapter(private val context: Context, val listaElementi: List<Elem
                 quantita.setTextColor(getColor(context, R.color.colorText1))
                 testo.setTextColor(getColor(context, R.color.colorText1))
             }
+            //parametro booleano longpress per distinguere e di conseguenza eseguire due azioni differenti nel fragment
             holder.itemView.setOnClickListener {
                 elementoListener.onElementoListener(elemento, holder.layoutPosition, false)
             }
@@ -70,6 +63,7 @@ class ElementoAdapter(private val context: Context, val listaElementi: List<Elem
         }
     }
 
+    //interfaccia del listener per poter interagire nel fragment
     interface ElementoListener{
         fun onElementoListener(elemento: Elemento, position: Int, longpress: Boolean)
     }

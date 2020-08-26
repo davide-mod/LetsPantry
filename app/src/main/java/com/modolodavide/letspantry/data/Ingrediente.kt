@@ -2,7 +2,6 @@ package com.modolodavide.letspantry.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.io.Serializable
 
 @Entity(tableName = "dispensa")
 data class Ingrediente(
@@ -13,4 +12,4 @@ data class Ingrediente(
     val scadenzaMese: Int,
     val scadenzaGiorno: Int,
     val quantita: Double
-): Serializable
+)

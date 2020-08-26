@@ -6,6 +6,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+//valgono gli stessi commenti di IngredienteRepository
 class ElementoRepository(app: Application) {
     var elementoData = MutableLiveData<List<Elemento>>()
     private val elementoDAO = ElementoDatabase.getDatabase(app).elementoDao()
@@ -45,10 +46,10 @@ class ElementoRepository(app: Application) {
             elementoData.postValue(elementoDAO.getAll())
         }
     }
+
     private fun randomElemento(): Elemento{
         val valore = (1..30).random()
         return (Elemento(0, "Ingrediente$valore lista", valore%2==0, 20.0))
-
     }
 
 }

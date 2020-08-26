@@ -1,6 +1,5 @@
 package com.modolodavide.letspantry.ui.main
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.Ricetta
 
-class RicettaAdapter(private val context: Context, val listaRicette: List<Ricetta>, val ricettaListener: RicettaListener) :
+class RicettaAdapter(val listaRicette: List<Ricetta>, val ricettaListener: RicettaListener) :
     RecyclerView.Adapter<RicettaAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val nome: TextView = itemView.findViewById(R.id.nomeRicetta)

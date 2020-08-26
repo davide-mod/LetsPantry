@@ -30,10 +30,6 @@ import java.util.*
 
 class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
 
-    companion object {
-        fun newInstance() = MainFragment()
-    }
-
     private lateinit var viewModel: MainViewModel
     private lateinit var mainVM: MainViewModel
     private lateinit var listaIngredienti: RecyclerView
@@ -44,25 +40,40 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         savedInstanceState: Bundle?
     ): View {
         val view = inflater.inflate(R.layout.main_fragment, container, false)
-        mainVM = ViewModelProvider(this).get(MainViewModel::class.java)
 
+        mainVM = ViewModelProvider(this).get(MainViewModel::class.java)
+        listaIngredienti = view.findViewById(R.id.viewIngredienti)
+        val btnAdd = view.findViewById<TextView>(R.id.btnAggiungi)
         calendario = view.findViewById(R.id.calendar_exp)
         calendario.isVisible = false
         calendario.bringToFront()
         val txtCalendario: TextView = view.findViewById(R.id.txtCalendario)
-        listaIngredienti = view.findViewById(R.id.viewIngredienti)
-        val btnAdd = view.findViewById<TextView>(R.id.btnAggiungi)
-
+        val c = Calendar.getInstance()
+        val day = c.get(Calendar.DAY_OF_MONTH)
+        val month = c.get(Calendar.MONTH) + 1
+        val year = c.get(Calendar.YEAR)
+        //evidenzio il giorno attuale
+        calendario.markDate(
+            DateData(year, month, day).setMarkStyle(
+                MarkStyle.BACKGROUND, getColor(
+                    requireContext(),
+                    R.color.colorPrimary
+                )
+            )
+        )
+        //quando cambia il mese visualizzato cambio valore della TextView per indicarlo
         calendario.setOnMonthChangeListener(object : OnMonthChangeListener() {
             override fun onMonthChange(year: Int, month: Int) {
                 val testo = "$month/$year"
                 txtCalendario.text = testo
             }
         })
+        //tengo "sotto osservazione" il database degli ingredienti e nel caso ci fosse una qualche modifica aggiorno la lista
         mainVM.ingredienteList.observe(viewLifecycleOwner, {
             val adapterI = IngredienteAdapter(requireContext(), it, this)
             listaIngredienti.adapter = adapterI
             it.forEach { ingrediente ->
+                //metto un pallino rosso sul giorno relativo alla scadenza
                 calendario.markDate(
                     DateData(
                         ingrediente.scadenzaAnno,
@@ -72,8 +83,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                 )
             }
         })
-
-
+        //listener sulla data che permette di filtrare gli ingredienti e vedere solo quelli che scadono in quell'esatto giorno
         calendario.setOnDateClickListener(object : OnDateClickListener() {
             override fun onDateClick(view: View, date: DateData) {
                 val listaFiltrata = mutableListOf<Ingrediente>()
@@ -86,11 +96,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             }
         })
 
-        val c = Calendar.getInstance()
-        val day = c.get(Calendar.DAY_OF_MONTH)
-        val month = c.get(Calendar.MONTH) + 1
-        val year = c.get(Calendar.YEAR)
-
+        //mostro/nascondo il calendario cliccando sulla TextView relativa
         txtCalendario.setOnClickListener {
             if (calendario.isVisible) {
                 calendario.isVisible = false
@@ -102,7 +108,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                 )
                 listaIngredienti.adapter = adapterI
             } else {
-                calendario.travelTo(
+                calendario.travelTo( //imposto come mese di partenza quello attuale
                     DateData(year, month, day).setMarkStyle(
                         MarkStyle.BACKGROUND, getColor(
                             requireContext(),
@@ -115,7 +121,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             }
         }
 
-        btnAdd.setOnClickListener {
+        btnAdd.setOnClickListener {//aggiunta di un ingrediente
             val dialog = Dialog(requireContext())
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
             dialog.setCancelable(true)
@@ -157,32 +163,22 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             dialog.show()
         }
 
-
         val ricerca = view.findViewById<EditText>(R.id.ricerca)
-
-        ricerca.addTextChangedListener {
+        ricerca.addTextChangedListener {//ogni singola modifica alla EditText triggera questo evento
             var maxSF = 0.0
             val listaFiltrata = mutableListOf<Ingrediente>()
-            mainVM.ingredienteList.value?.forEach {
+            mainVM.ingredienteList.value?.forEach {//scorro la lista la prima volta per trovare la massima similarità
                 val sim = similarity(it.nome, ricerca.text.toString())
                 if (sim > maxSF) maxSF = sim
             }
+            //mostro gli ingredienti che hanno almeno metà similarità massima
             mainVM.ingredienteList.value?.forEach {
                 val sim = similarity(it.nome, ricerca.text.toString())
                 if (sim > maxSF / 2) {
                     listaFiltrata.add(it)
-                    Log.i(
-                        "debug",
-                        "SIMILARITY = ${
-                            similarity(
-                                it.nome,
-                                ricerca.text.toString()
-                            )
-                        } [${it.nome}; ${ricerca.text}]"
-                    )
                 }
             }
-
+            //se si cancella completamente torno a frase completa
             if (ricerca.text.toString() != "") {
                 val adapterI = IngredienteAdapter(requireContext(), listaFiltrata, this)
                 listaIngredienti.adapter = adapterI
@@ -204,11 +200,13 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
     }
 
+    //funzione per aggiornare la lista di ingredienti anche dal dialog
     private fun refreshLista(lista: MutableList<Ingrediente>) {
         val adapterI = IngredienteAdapter(requireContext(), lista, this)
         listaIngredienti.adapter = adapterI
     }
 
+    //trasformo la data da stringa dd-mm-yyyy in tre valori Interi
     private fun parseData(data: String): Triple<Int, Int, Int> {
         var year = ""
         var month = ""
@@ -239,6 +237,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         return Triple(year.toInt(), month.toInt(), day.toInt())
     }
 
+    //modifica ingrediente
     override fun onIngredienteListener(ingrediente: Ingrediente, position: Int) {
         val dialog = Dialog(requireContext())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -298,6 +297,8 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         }
         dialog.show()
     }
+
+    //funzioni per la similarità da https://stackoverflow.com/questions/955110/similarity-string-comparison-in-java
 
     private fun similarity(s1: String, s2: String): Double {
         var longer = s1

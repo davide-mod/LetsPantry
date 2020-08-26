@@ -20,6 +20,7 @@ interface IngredienteDAO {
     @Query("UPDATE dispensa SET nome=:nome, scadenzaAnno=:scadenzaAnno, scadenzaMese=:scadenzaMese, scadenzaGiorno=:scadenzaGiorno, quantita=:quantita WHERE id=:id")
     suspend fun updateIngrediente(nome: String, scadenzaAnno: Int, scadenzaMese: Int, scadenzaGiorno: Int, quantita: Double, id: Int)
 
+    //Query per trovare gli ingredienti che scadono in un determinato giorno, non viene usata in favore di un metodo eventualmente più lento (su un grande numero di ingredienti) ma più intuitivo
     @Query("SELECT * FROM dispensa WHERE scadenzaAnno=:scadenzaAnno AND scadenzaMese=:scadenzaMese AND scadenzaGiorno=:scadenzaGiorno")
     suspend fun thatDayList(scadenzaAnno: Int, scadenzaMese: Int, scadenzaGiorno: Int): List<Ingrediente>
 
