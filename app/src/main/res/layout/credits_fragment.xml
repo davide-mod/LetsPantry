@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/creditsTesto"
+        android:autoLink="web"
         android:textColor="@color/colorText2"
         android:textSize="@dimen/dimTextLittle"
         android:scrollbars = "vertical"

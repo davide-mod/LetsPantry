@@ -38,14 +38,14 @@ class ElementoAdapter(private val context: Context, val listaElementi: List<Elem
             quantita.text = elemento.quantita.toString()
             //in base alla situazione dell'elemento, l'aspetto sarà differente
             if(elemento.preso) {
-                listCheck.text = "X"
+                listCheck.text = "☑"
                 elementoView.background = getDrawable(context, R.drawable.rettangolo_back_black)
                 listCheck.setTextColor(getColor(context, R.color.colorText2))
                 quantita.setTextColor(getColor(context, R.color.colorText2))
                 testo.setTextColor(getColor(context, R.color.colorText2))
             }
             else {
-                listCheck.text = "O"
+                listCheck.text = "☐"
                 elementoView.background = getDrawable(context, R.drawable.rettangolo_back_green)
                 listCheck.setTextColor(getColor(context, R.color.colorText1))
                 quantita.setTextColor(getColor(context, R.color.colorText1))

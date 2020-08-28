@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
     android:layout_height="match_parent"
     android:background="@color/colorBackgroundGrey"
     tools:context=".ui.main.MainFragment">
@@ -15,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimMargin"
         android:text="calendario"
-        android:textColor="@color/colorText1"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/dimTextLittle"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +36,8 @@
         android:id="@+id/ricerca"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/dimMargin"
+        android:layout_marginBottom="@dimen/dimMargin"
+        android:layout_marginRight="@dimen/dimMargin"
         android:textSize="@dimen/dimTextLittle"
         android:hint="cerca"
         app:layout_constraintLeft_toRightOf="@id/btnMenuLaterale"

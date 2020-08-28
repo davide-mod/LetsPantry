@@ -73,7 +73,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             val adapterI = IngredienteAdapter(requireContext(), it, this)
             listaIngredienti.adapter = adapterI
             it.forEach { ingrediente ->
-                //metto un pallino rosso sul giorno relativo alla scadenza
+                //metto un pallino colorato sotto il giorno relativo alla scadenza
                 calendario.markDate(
                     DateData(
                         ingrediente.scadenzaAnno,
@@ -108,8 +108,12 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                 )
                 listaIngredienti.adapter = adapterI
             } else {
+                val c1 = Calendar.getInstance()
+                val day1 = c1.get(Calendar.DAY_OF_MONTH)
+                val month1 = c1.get(Calendar.MONTH) + 1
+                val year1 = c1.get(Calendar.YEAR)
                 calendario.travelTo( //imposto come mese di partenza quello attuale
-                    DateData(year, month, day).setMarkStyle(
+                    DateData(year1, month1, day1).setMarkStyle(
                         MarkStyle.BACKGROUND, getColor(
                             requireContext(),
                             R.color.colorPrimary

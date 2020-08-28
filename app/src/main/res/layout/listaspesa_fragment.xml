@@ -5,15 +5,27 @@
     android:id="@+id/fragmentListaSpesa"
     android:layout_height="match_parent">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:text="LONGPRESS SU UN ELEMENTO PER MODIFICARLO"
+        android:text="longpress on element to edit"
+        app:layout_constraintLeft_toRightOf="@id/btnMenuLaterale"
+        android:gravity="center"
         android:textColor="@color/colorText1"
+        android:textSize="@dimen/dimTextLittle"
+        android:layout_margin="@dimen/dimMargin"
         android:id="@+id/longpress"
         />
+    <ImageView
+        android:contentDescription="@string/add"
+        android:id="@+id/btnMenuLaterale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimMargin"
+        android:src="@drawable/ic_baseline_menu_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/viewListaSpesa"
         android:layout_width="match_parent"

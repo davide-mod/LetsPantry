@@ -5,7 +5,7 @@
     <dimen name="dimMargin">8dp</dimen>
     <dimen name="dimMarginBig">16dp</dimen>
     <dimen name="dimStroke">2dp</dimen>
-    <dimen name="dimText">24sp</dimen>
+    <dimen name="dimText">22sp</dimen>
     <dimen name="dimTextBig">32sp</dimen>
     <dimen name="dimTextLittle">18sp</dimen>
 </resources>

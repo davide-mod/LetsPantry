@@ -15,10 +15,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.FileHelper
+import com.modolodavide.letspantry.MainActivity
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.Ricetta
 import com.squareup.moshi.*
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import kotlinx.android.synthetic.main.main_fragment.*
 import java.util.*
 
 
@@ -43,7 +45,7 @@ class RicetteFragment : Fragment(), RicettaAdapter.RicettaListener {
         val adapter: JsonAdapter<List<Ricetta>> = moshi.adapter(listTypeRicetta)
         var ricette: List<Ricetta>? = adapter.fromJson(text)
         //ordino la lista
-        ricette = ricette?.sortedByDescending { it.Tipo_Piatto }
+        ricette = ricette?.sortedBy { it.Tipo_Piatto }
         var all = false
         val adapterR = RicettaAdapter(ricette!!, this)
         listaRicette = view.findViewById(R.id.listaRicette)
@@ -112,6 +114,9 @@ class RicetteFragment : Fragment(), RicettaAdapter.RicettaListener {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        btnMenuLaterale.setOnClickListener{
+            (activity as MainActivity?)?.openDrawer()
+        }
         viewModel = ViewModelProvider(this).get(RicetteViewModel::class.java)
     }
 

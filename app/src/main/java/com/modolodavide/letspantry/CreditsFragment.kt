@@ -24,11 +24,13 @@ class CreditsFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(CreditsViewModel::class.java)
         creditsTesto.movementMethod = ScrollingMovementMethod()
         //tutti gli "aiuti" che ho ricevuto
-        val str =   "LIBRERIA ESTERNA CALENDARIO MODIFICABILE:\nhttps://github.com/SpongeBobSun/mCalendarView\n" +
-                    "ALGORITMO di STRING MATCHING K-APPROSSIMATO per RICERCA:\nhttps://stackoverflow.com/questions/955110/similarity-string-comparison-in-java\n"+
-                    "TESTING:\nhttps://github.com/MiraxhTereziu\n"+
-                    "PORZIONE DEK DATABASE RICETTE:\nhttps://www.dbricette.it/index.htm"
-        creditsTesto.text=str
+        val str =
+            "LIBRERIA ESTERNA CALENDARIO MODIFICABILE:\nhttps://github.com/SpongeBobSun/mCalendarView\n" +
+                    "ALGORITMO di STRING MATCHING K-APPROSSIMATO per RICERCA:\nhttps://stackoverflow.com/questions/955110/similarity-string-comparison-in-java\n" +
+                    "DATABASE RICETTE:\nhttps://www.dbricette.it/index.htm\n" +
+                    "ICONE:\nwww.flaticon.com\n" +
+                    "TESTING:\nhttps://github.com/MiraxhTereziu"
+        creditsTesto.text = str
     }
 
 }

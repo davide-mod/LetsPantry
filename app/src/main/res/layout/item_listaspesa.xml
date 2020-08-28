@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/rettangolo_back_green"
-    android:layout_marginBottom="4dp"
+    android:layout_marginTop="@dimen/dimMargin"
     android:id="@+id/elementoView"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
@@ -13,8 +13,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="@dimen/dimMargin"
-        android:padding="@dimen/dimMarginBig"
+        android:padding="@dimen/dimMargin"
         android:text="X"
+        android:textSize="@dimen/dimText"
         android:id="@+id/listCheck"
         />
     <TextView
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/listQuantita"
+        app:layout_constraintRight_toLeftOf="@id/lineaVerticale"
         app:layout_constraintLeft_toRightOf="@id/listCheck"
         android:layout_margin="@dimen/dimMargin"
         android:textSize="@dimen/dimText"
@@ -40,6 +41,14 @@
         android:id="@+id/listQuantita"
         android:hint="20.0"
         />
-
+    <View
+        android:layout_width="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/dimMargin"
+        app:layout_constraintRight_toLeftOf="@id/listQuantita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/lineaVerticale"
+        android:layout_height="35dp"
+        android:background="@color/colorText2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

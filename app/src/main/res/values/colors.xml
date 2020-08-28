@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#00E676</color>
-    <color name="colorReddo">#FF4242</color>
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#B2FF59</color>
+    <color name="colorPrimary">#368A0F</color>
+    <color name="colorReddo">#D6332E</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#88C747</color>
     <color name="colorText1">#212121</color>
     <color name="listaTook">#BEBEBE</color>
-    <color name="colorBackgroundGrey">#F1F1F1</color>
-    <color name="colorText2">#FFFFFF</color>
+    <color name="colorBackgroundGrey">#FFFFFF</color>
+    <color name="colorText2">#F1F1F1</color>
 </resources>

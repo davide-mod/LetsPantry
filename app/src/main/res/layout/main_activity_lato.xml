@@ -14,8 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorPrimary"
-        app:itemTextColor="@color/colorText2"
+        android:background="@color/colorBackgroundGrey"
+        app:itemTextColor="@color/colorText1"
         app:menu="@menu/item_nav_view"
         />
 

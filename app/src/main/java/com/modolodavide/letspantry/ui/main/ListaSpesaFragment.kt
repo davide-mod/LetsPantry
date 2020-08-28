@@ -11,8 +11,10 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
+import com.modolodavide.letspantry.MainActivity
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.data.Elemento
+import kotlinx.android.synthetic.main.main_fragment.*
 
 class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
 
@@ -73,8 +75,10 @@ class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        btnMenuLaterale.setOnClickListener{
+            (activity as MainActivity?)?.openDrawer()
+        }
         elemVM = ViewModelProvider(this).get(ElementoViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
     override fun onElementoListener(elemento: Elemento, position: Int, longpress: Boolean) {

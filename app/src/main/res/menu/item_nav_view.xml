@@ -2,21 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/itemDispensa"
+        android:icon="@drawable/ic_031_shelves"
         android:title="Dispensa"
         />
     <item
         android:id="@+id/itemListaSpesa"
+        android:icon="@drawable/ic_022_list"
         android:title="Lista della Spesa"
         />
     <item
         android:id="@+id/itemRicette"
+        android:icon="@drawable/ic_recipe_book"
         android:title="Ricette"
         />
     <item
         android:id="@+id/itemSupermercati"
+        android:icon="@drawable/ic_027_placeholder"
         android:title="Supermercati vicini"
         />
     <item
+        android:icon="@drawable/ic_copyright"
         android:id="@+id/itemCredits"
         android:title="Credits"
         />
