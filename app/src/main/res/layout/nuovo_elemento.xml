@@ -23,7 +23,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@id/nuovoElementoTitolo"
         android:gravity="center"
-        android:background="@drawable/fab_back"
+        android:background="@drawable/fab_back_lightblue"
         android:text="+"
         android:textSize="@dimen/dimText"
         android:layout_margin="@dimen/dimMargin"

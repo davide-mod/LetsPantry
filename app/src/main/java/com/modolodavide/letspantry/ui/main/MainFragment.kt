@@ -2,14 +2,17 @@ package com.modolodavide.letspantry.ui.main
 
 import android.app.DatePickerDialog
 import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
@@ -18,6 +21,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.MainActivity
 import com.modolodavide.letspantry.R
+import com.modolodavide.letspantry.data.Elemento
 import com.modolodavide.letspantry.data.Ingrediente
 import kotlinx.android.synthetic.main.main_fragment.*
 import sun.bob.mcalendarview.MarkStyle
@@ -32,6 +36,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
 
     private lateinit var viewModel: MainViewModel
     private lateinit var mainVM: MainViewModel
+    private lateinit var spesaVM: ElementoViewModel
     private lateinit var listaIngredienti: RecyclerView
     private lateinit var calendario: ExpCalendarView
 
@@ -39,9 +44,12 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.main_fragment, container, false)
+        activity?.title = "Let's Pantry! - Dispensa"
 
+
+        val view = inflater.inflate(R.layout.main_fragment, container, false)
         mainVM = ViewModelProvider(this).get(MainViewModel::class.java)
+        spesaVM = ViewModelProvider(this).get(ElementoViewModel::class.java)
         listaIngredienti = view.findViewById(R.id.viewIngredienti)
         val btnAdd = view.findViewById<TextView>(R.id.btnAggiungi)
         calendario = view.findViewById(R.id.calendar_exp)
@@ -124,12 +132,12 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                 txtCalendario.text = "$month/$year"
             }
         }
-
         btnAdd.setOnClickListener {//aggiunta di un ingrediente
             val dialog = Dialog(requireContext())
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
             dialog.setCancelable(true)
             dialog.setContentView(R.layout.nuovo_ingrediente)
+
             val newData = dialog.findViewById<TextView>(R.id.txtNewData)
             newData.text = "$day-$month-$year"
             newData.setOnClickListener {
@@ -139,7 +147,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                         newData.text = "$dayOfMonth-${month + 1}-$year"
                     },
                     year,
-                    month-1,
+                    month - 1,
                     day
                 ).show()
             }
@@ -164,6 +172,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
                 )
                 dialog.dismiss()
             }
+
             dialog.show()
         }
 
@@ -201,6 +210,10 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         btnMenuLaterale.setOnClickListener{
             (activity as MainActivity?)?.openDrawer()
         }
+        (activity as MainActivity?)?.actionBarColor(getColor(
+            requireContext(),
+            R.color.colorPrimaryGreen
+        ))
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
     }
 
@@ -269,6 +282,7 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
         val newNome = dialog.findViewById<EditText>(R.id.editNome)
         val newQuantita = dialog.findViewById<EditText>(R.id.editQuantita)
         val btnAdd2 = dialog.findViewById<TextView>(R.id.btnAggiungiElemento)
+        val btnToLista = dialog.findViewById<TextView>(R.id.btnToLista)
         val elimina = dialog.findViewById<TextView>(R.id.elimina)
         newNome.setText(ingrediente.nome)
         newQuantita.setText(ingrediente.quantita.toString())
@@ -290,6 +304,16 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
             )
             dialog.dismiss()
         }
+        btnToLista.setOnClickListener{
+            spesaVM.insertElemento(Elemento(0, newNome.text.toString(), false, newQuantita.text.toString().toDouble()))
+            calendario.unMarkDate(
+                ingrediente.scadenzaAnno,
+                ingrediente.scadenzaMese,
+                ingrediente.scadenzaGiorno
+            )
+            mainVM.deleteIngrediente(ingrediente)
+            dialog.dismiss()
+        }
         elimina.setOnClickListener {
             calendario.unMarkDate(
                 ingrediente.scadenzaAnno,
@@ -303,7 +327,6 @@ class MainFragment : Fragment(), IngredienteAdapter.IngredienteListener {
     }
 
     //funzioni per la similarità da https://stackoverflow.com/questions/955110/similarity-string-comparison-in-java
-
     private fun similarity(s1: String, s2: String): Double {
         var longer = s1
         var shorter = s2

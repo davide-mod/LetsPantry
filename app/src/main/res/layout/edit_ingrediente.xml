@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimMarginBig"
-        app:layout_constraintTop_toBottomOf="@id/editNome"
+        app:layout_constraintBottom_toTopOf="@id/btnToLista"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/editQuantita"
@@ -68,10 +68,26 @@
         app:layout_constraintTop_toBottomOf="@id/editNome"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@id/editQuantita"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnToLista"
         android:id="@+id/txtNewData"
         android:textColor="@color/colorText1"
         android:text="14/06/1998"
+        android:textSize="@dimen/dimText"
+        />
+
+    <TextView
+        android:layout_margin="@dimen/dimMarginBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNewData"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btnToLista"
+        android:textColor="@color/colorText2"
+        android:background="@drawable/fab_back"
+        android:padding="@dimen/dimMargin"
+        android:text="spesa →"
         android:textSize="@dimen/dimText"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

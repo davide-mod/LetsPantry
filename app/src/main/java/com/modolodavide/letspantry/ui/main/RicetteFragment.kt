@@ -1,6 +1,8 @@
 package com.modolodavide.letspantry.ui.main
 
 import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.Spinner
 import android.widget.TextView
+import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
@@ -35,6 +38,8 @@ class RicetteFragment : Fragment(), RicettaAdapter.RicettaListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        activity?.title = "Let's Pantry! - Ricette"
+
         val view = inflater.inflate(R.layout.ricette_fragment, container, false)
 
         //leggo il json delle ricette
@@ -117,6 +122,10 @@ class RicetteFragment : Fragment(), RicettaAdapter.RicettaListener {
         btnMenuLaterale.setOnClickListener{
             (activity as MainActivity?)?.openDrawer()
         }
+        (activity as MainActivity?)?.actionBarColor(getColor(
+            requireContext(),
+            R.color.colorPrimaryOrange
+        ))
         viewModel = ViewModelProvider(this).get(RicetteViewModel::class.java)
     }
 

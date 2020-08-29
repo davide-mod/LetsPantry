@@ -43,7 +43,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:gravity="center"
-        android:background="@drawable/fab_back"
+        android:background="@drawable/fab_back_orange"
         android:text="Filtra"
         android:textSize="@dimen/dimText"
         android:layout_margin="@dimen/dimMargin"

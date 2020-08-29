@@ -46,7 +46,7 @@ class ElementoAdapter(private val context: Context, val listaElementi: List<Elem
             }
             else {
                 listCheck.text = "☐"
-                elementoView.background = getDrawable(context, R.drawable.rettangolo_back_green)
+                elementoView.background = getDrawable(context, R.drawable.rettangolo_back_blue)
                 listCheck.setTextColor(getColor(context, R.color.colorText1))
                 quantita.setTextColor(getColor(context, R.color.colorText1))
                 testo.setTextColor(getColor(context, R.color.colorText1))

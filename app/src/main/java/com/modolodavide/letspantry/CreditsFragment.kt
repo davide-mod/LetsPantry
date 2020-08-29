@@ -1,11 +1,13 @@
 package com.modolodavide.letspantry
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.credits_fragment.*
 
@@ -16,12 +18,15 @@ class CreditsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        activity?.title = "Let's Pantry! - Crediti"
         return inflater.inflate(R.layout.credits_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(CreditsViewModel::class.java)
+        (activity as MainActivity?)?.actionBarColor(Color.BLACK)
+
         creditsTesto.movementMethod = ScrollingMovementMethod()
         //tutti gli "aiuti" che ho ricevuto
         val str =

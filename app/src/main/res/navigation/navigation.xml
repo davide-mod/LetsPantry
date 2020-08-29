@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.modolodavide.letspantry.ui.main.MainFragment"
-        android:label="main_fragment"
+        android:label="Let's Pantry! Dispensa"
         tools:layout="@layout/main_fragment" />
     <fragment
         android:id="@+id/ricetteFragment"
         android:name="com.modolodavide.letspantry.ui.main.RicetteFragment"
-        android:label="RicetteFragment" />
+        android:label="Let's Pantry! Ricette" />
     <fragment
         android:id="@+id/listaSpesaFragment"
         android:name="com.modolodavide.letspantry.ui.main.ListaSpesaFragment"
-        android:label="ListaSpesaFragment" />
+        android:label="Let's Pantry! Lista della Spesa" />
     <fragment
         android:id="@+id/creditsFragment"
         android:name="com.modolodavide.letspantry.CreditsFragment"

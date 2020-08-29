@@ -9,21 +9,27 @@ import android.view.ViewGroup
 import android.view.Window
 import android.widget.EditText
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.modolodavide.letspantry.MainActivity
 import com.modolodavide.letspantry.R
 import com.modolodavide.letspantry.data.Elemento
+import com.modolodavide.letspantry.data.Ingrediente
 import kotlinx.android.synthetic.main.main_fragment.*
+import java.util.*
 
 class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
 
     private lateinit var elemVM: ElementoViewModel
+    private lateinit var dispensaVM: MainViewModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.listaspesa_fragment, container, false)
+        activity?.title = "Let's Pantry! - Lista della Spesa"
+
 
         //istanzio la viewmodel per poter comunicare facilmente col database della Lista della spesa
         elemVM = ViewModelProvider(this).get(ElementoViewModel::class.java)
@@ -75,9 +81,16 @@ class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        dispensaVM = ViewModelProvider(this).get(MainViewModel::class.java)
         btnMenuLaterale.setOnClickListener{
             (activity as MainActivity?)?.openDrawer()
         }
+        (activity as MainActivity?)?.actionBarColor(
+            ContextCompat.getColor(
+                requireContext(),
+                R.color.colorPrimaryBlue
+            )
+        )
         elemVM = ViewModelProvider(this).get(ElementoViewModel::class.java)
     }
 
@@ -94,6 +107,16 @@ class ListaSpesaFragment : Fragment(), ElementoAdapter.ElementoListener {
             val newQuantita = dialog.findViewById<EditText>(R.id.editQuantita)
             val btnAdd2 = dialog.findViewById<TextView>(R.id.btnAggiungiElemento)
             val elimina = dialog.findViewById<TextView>(R.id.elimina)
+            val btnToDispensa = dialog.findViewById<TextView>(R.id.btnToDispensa)
+            val c = Calendar.getInstance()
+            val day = c.get(Calendar.DAY_OF_MONTH)
+            val month = c.get(Calendar.MONTH) + 1
+            val year = c.get(Calendar.YEAR)
+            btnToDispensa.setOnClickListener {
+                dispensaVM.insertIngrediente(Ingrediente(0, newNome.text.toString(), year, month, day, newQuantita.text.toString().toDouble()))
+                elemVM.deleteElemento(elemento)
+                dialog.dismiss()
+            }
             newNome.setText(elemento.testo)
             newQuantita.setText(elemento.quantita.toString())
             btnAdd2.setOnClickListener {
