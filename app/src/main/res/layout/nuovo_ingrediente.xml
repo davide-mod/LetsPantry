@@ -11,6 +11,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:textSize="@dimen/dimText"
         android:text="Nuovo elemento:"
+        app:layout_constraintRight_toLeftOf="@id/btnAggiungiElemento"
         android:textColor="@color/colorText1"
         android:layout_margin="@dimen/dimMarginBig"
         android:id="@+id/nuovoElementoTitolo"

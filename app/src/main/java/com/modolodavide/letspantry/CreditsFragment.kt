@@ -31,7 +31,7 @@ class CreditsFragment : Fragment() {
         //tutti gli "aiuti" che ho ricevuto
         val str =
             "LIBRERIA ESTERNA CALENDARIO MODIFICABILE:\nhttps://github.com/SpongeBobSun/mCalendarView\n" +
-                    "ALGORITMO di STRING MATCHING K-APPROSSIMATO per RICERCA:\nhttps://stackoverflow.com/questions/955110/similarity-string-comparison-in-java\n" +
+                    "ALGORITMO di \"SIMILARITA' tra STRINGHE\" per ricerca ingrediente:\nhttps://stackoverflow.com/questions/955110/similarity-string-comparison-in-java\n" +
                     "DATABASE RICETTE:\nhttps://www.dbricette.it/index.htm\n" +
                     "ICONE:\nwww.flaticon.com\n" +
                     "TESTING:\nhttps://github.com/MiraxhTereziu"

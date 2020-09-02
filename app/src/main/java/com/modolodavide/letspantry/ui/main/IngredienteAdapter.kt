@@ -56,8 +56,9 @@ class IngredienteAdapter(private val context: Context, val listaIngrediente: Lis
                 scadenza.setTextColor(ContextCompat.getColor(context, R.color.colorText1))
             }
 
-            holder.itemView.setOnClickListener {
+            holder.itemView.setOnLongClickListener {
                 ingredienteListener.onIngredienteListener(ingrediente, holder.layoutPosition)
+                true
             }
 
         }
